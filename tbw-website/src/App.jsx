@@ -1,7 +1,7 @@
 import React from "react";
-import LandingPage from "./Pages/LandingPage"
+import LandingPage from "./Pages";
 import "./Styles/App.scss";
-import './i18n';
+import "./i18n";
 
 function App() {
   return (
