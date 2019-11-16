@@ -1,13 +1,12 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
-import CustomToolbar from "./Components/CustomToolbar";
+import LandingPage from "./Pages/LandingPage"
 import "./Styles/App.scss";
+import './i18n';
 
 function App() {
-  const { t } = useTranslation();
   return (
     <div className="App">
-      <CustomToolbar title={t("title")} />
+      <LandingPage />
     </div>
   );
 }

@@ -10,12 +10,26 @@ i18n
     resources: {
       en: {
         translations: {
-          title: "Thompson Boiler Works"
+          title: "Thompson Boiler Works",
+          nav: {
+            about: "About",
+            services: "Services",
+            projects: "Project",
+            careers: "Careers",
+            contact: "Contact"
+          }
         }
       },
       fre: {
         translations: {
-          title: "Thompson Boiler Works"
+          title: "Thompson Boiler Works",
+          nav: {
+            about: "About",
+            services: "Services",
+            projects: "Projects",
+            careers: "Careers",
+            contact: "Contact"
+          }
         }
       }
     },
