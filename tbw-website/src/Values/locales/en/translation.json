@@ -1,10 +1,28 @@
 {
-    "title": "Thompson Boiler Works",
-    "nav": {
-        "about": "About",
-        "services": "Services",
-        "projects": "Projects",
-        "careers": "Careers",
-        "contact": "Contact"
+  "title": "Thompson Boiler Works",
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+  "footer": {
+    "connectList": {
+      "title": "Connect",
+      "address": "5678 Power Rd South Gloucester Industrial Park",
+      "email": "{Insert Email}",
+      "phone": "(613) 822-4099"
+    },
+    "linksList": {
+      "title": "Links"
+    },
+    "hoursList": {
+      "title": "Hours Of Operation",
+      "weekdays": "Monday-Friday",
+      "weekends": "Saturday-Sunday",
+      "weekdayTimes": "5:00am-9:00pm",
+      "weekendTimes": "Closed"
     }
+  }
 }

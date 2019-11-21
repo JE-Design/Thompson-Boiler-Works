@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import { Email, LocationOn, Phone } from "@material-ui/icons";
 import { FooterList } from "Components/";
 import { useTranslation } from "react-i18next";
@@ -9,64 +9,67 @@ import "./CustomFooter.scss";
 const CustomFooter = () => {
   const { t } = useTranslation();
 
+  const connectTitle = t("footer.connectList.title");
   const connectList = [
     {
       icon: LocationOn,
-      primaryText: "5678 Power Rd South Gloucester Industrial Park"
+      primaryText: t("footer.connectList.address")
     },
     {
       icon: Email,
-      primaryText: "{Insert Email}"
+      primaryText: t("footer.connectList.email")
     },
     {
       icon: Phone,
-      primaryText: "(613) 822-4099"
+      primaryText: t("footer.connectList.phone")
     }
   ];
 
+  const linkTitle = t("footer.linksList.title");
   const linksList = [
     {
-      primaryText: "Services",
-      link: "/services"
+      primaryText: t("nav.services"),
+      link: "/Services"
     },
     {
-      primaryText: "Projects",
-      link: "/Projects"
+      primaryText: t("nav.projects"),
+      link: "/projects"
     },
     {
-      primaryText: "Careers",
-      link: "/Careers"
+      primaryText: t("nav.careers"),
+      link: "/Careerso"
     }
   ];
 
-  const hoursOfOperationList = [
+  const hourTitle = t("footer.hoursList.title");
+  const hoursList = [
     {
-      secondaryText: "Monday - Friday:",
-      primaryText: "9:00am - 5:00pm"
+      secondaryText: t("footer.hoursList.weekdays"),
+      primaryText: t("footer.hoursList.weekdayTimes")
     },
     {
-      secondaryText: "Saturday - Sunday:",
-      primaryText: "Closed"
+      secondaryText: t("footer.hoursList.weekends"),
+      primaryText: t("footer.hoursList.weekendTimes")
     }
   ];
   return (
     <div className="footer">
       <Container className="footer-container">
-        <Grid className="footer-column">
-          <h3 className="footer-subtitle">Connect</h3>
+        <div className="footer-column">
+          <h3 className="footer-subtitle">{connectTitle}</h3>
           <FooterList listItems={connectList} />
-        </Grid>
-        <Grid className="footer-column">
-          <h3 className="footer-subtitle">Links</h3>
+        </div>
+        <div className="footer-column">
+          <h3 className="footer-subtitle">{linkTitle}</h3>
           <FooterList listItems={linksList} />
-        </Grid>
-        <Grid className="footer-column">
-          <h3 className="footer-subtitle">Hours of Operation</h3>
-          <FooterList listItems={hoursOfOperationList} />
-        </Grid>
-        <Grid className="footer-column">
+        </div>
+        <div className="footer-column">
+          <h3 className="footer-subtitle">{hourTitle}</h3>
+          <FooterList listItems={hoursList} />
+        </div>
+        <div className="footer-column">
           <img className="footer-logo" src={logo} alt="temp" />
-        </Grid>
+        </div>
       </Container>
     </div>
   );

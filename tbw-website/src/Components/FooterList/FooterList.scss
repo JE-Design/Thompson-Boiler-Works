@@ -14,16 +14,31 @@
       min-width: 20px;
       padding-right: $default-spacing/2;
     }
+
     .secondary-text {
       flex: initial;
       color: $color-gray;
       font-size: $font-size-links;
       padding-right: $default-spacing/2;
     }
-    .primary-text {
-      flex: initial;
-      color: $color-white;
-      font-size: $font-size-links;
+
+    .primary-text-link {
+      text-decoration-color: $color-dm-link;
+      &:visited {
+        text-decoration-color: $color-dm-link-visited;
+      }
+      &:active {
+        text-decoration-color: $color-secondary;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+
+      .primary-text {
+        flex: initial;
+        color: $color-white;
+        font-size: $font-size-links;
+      }
     }
   }
 }
