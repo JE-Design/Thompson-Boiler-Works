@@ -1,0 +1,79 @@
+@import "Styles/Colours.scss";
+@import "Styles/Variables.scss";
+@import "Styles/MediaQueries.scss";
+
+.contact-page {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: $default-spacing * 2;
+
+  .contact-form,
+  .contact-info {
+    flex: 1;
+    flex-direction: column;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-form {
+    .contact-form-title {
+      font-size: $font-size-subtitle * 1.2;
+      font-family: "Roboto Condensed";
+      color: $color-text-gray;
+    }
+
+    button {
+      background: $color-secondary !important;
+      margin: 15px 25% 15px 25%;
+      padding: 10px 100px 10px 100px;
+    }
+
+    .MuiTextField-root {
+      padding-bottom: $default-spacing;
+      width: 80%;
+      max-width: 400px;
+
+      .MuiFilledInput-underline {
+        border-radius: 0;
+
+        &::after {
+          border-color: black;
+        }
+      }
+
+      .MuiInputLabel-filled {
+        &.Mui-focused {
+          color: black;
+        }
+      }
+    }
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    @include desktop {
+      align-items: flex-start;
+      margin-left: $default-spacing;
+    }
+    @include tablet {
+      align-items: flex-start;
+      margin-left: $default-spacing;
+    }
+
+    .contact-info-div {
+      .contact-info-title {
+        font: bold $font-size-subtitle Roboto;
+        margin-top: 0px;
+      }
+
+      .contact-info-text {
+        font: $font-size-content Roboto;
+        margin-top: 0;
+        white-space: pre-line;
+      }
+    }
+  }
+}

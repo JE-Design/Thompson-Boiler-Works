@@ -1,0 +1,19 @@
+@import "Styles/Colours.scss";
+@import "Styles/Variables.scss";
+
+.page-header {
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  margin-top: $navbar-height;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .page-header-text {
+    font-family: "Roboto";
+    font-size: $font-size-header;
+    color: $color-white;
+  }
+}

@@ -1,47 +1,66 @@
 {
-    "title": "Thompson Boiler Works",
-    "nav": {
-        "about": "About",
-        "services": "Services",
-        "projects": "Projects",
-        "careers": "Careers",
-        "contact": "Contact"
+  "title": "Thompson Boiler Works",
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+  "landing": {
+    "subtitle": "Welding since 1988",
+    "about": {
+      "title": "Who are we?",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
+      "button": "Learn more about us!"
     },
-    "landing": {
-        "subtitle": "Welding since 1988",
-        "about": {
-            "title": "Who are we?",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-            "button": "Learn more about us!"
-        },
-        "services": {
-            "title": "Services",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-            "imageCaption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "button": "Learn more about our services!"
-        },
-        "projects": {
-            "title": "Projects",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-            "button": "Learn more about our projects!"
-        }
+    "services": {
+      "title": "Services",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
+      "imageCaption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "button": "Learn more about our services!"
     },
-    "footer": {
-        "connectList": {
-            "title": "Connect",
-            "address": "5678 Power Rd South Gloucester Industrial Park",
-            "email": "{Insert Email}",
-            "phone": "(613) 822-4099"
-        },
-        "linksList": {
-            "title": "Links"
-        },
-        "hoursList": {
-            "title": "Hours Of Operation",
-            "weekdays": "Monday-Friday",
-            "weekends": "Saturday-Sunday",
-            "weekdayTimes": "5:00am-9:00pm",
-            "weekendTimes": "Closed"
-        }
+    "projects": {
+      "title": "Projects",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
+      "button": "Learn more about our projects!"
     }
+  },
+  "footer": {
+    "connectList": {
+      "title": "Connect",
+      "address": "5678 Power Rd South Gloucester Industrial Park",
+      "email": "{Insert Email}",
+      "phone": "(613) 822-4099"
+    },
+    "linksList": {
+      "title": "Links"
+    },
+    "hoursList": {
+      "title": "Hours Of Operation",
+      "weekdays": "Monday-Friday",
+      "weekends": "Saturday-Sunday",
+      "weekdayTimes": "5:00am-9:00pm",
+      "weekendTimes": "Closed"
+    }
+  },
+  "contact": {
+    "form": {
+      "tagline": "Send us an email!",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "body": "Body",
+      "button": "Submit"
+    },
+    "info": {
+      "company": "Thompson Boiler Works",
+      "address": "5678 Power Rd South Gloucester Industrial Park",
+      "city-province": "Glouceseter, ON",
+      "country": "Canada",
+      "postal-code": "K1G 3N4",
+      "email": "{Insert Email}",
+      "phone": "(613) 822-4099"
+    }
+  }
 }
