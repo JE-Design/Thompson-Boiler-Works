@@ -93,7 +93,7 @@ This website is currently deployed onto Amazon Web Services by making use of the
 ## Contributors
 - Eros Di Pede
   + [Github](https://github.com/ForkBombGIT)
-  + [Website](https://erosdipede.me/)
+  + [Website](https://erosdipede.ca/)
 - Josh Gorman
   + [Github](https://github.com/Liannus)
   + [Website](https://joshgorman.ca/)
