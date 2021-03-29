@@ -2,7 +2,7 @@
 
 # Install certbot for grabbing certs
 curl https://get.acme.sh | sh -s email=contact.thompsonboilerworks@gmail.com
-bash ~/.bashrc
+source ~/.bashrc
 yum -y install socat
 mkdir /etc/letsencrypt/live/thompsonboilerworks.ca -p
 
