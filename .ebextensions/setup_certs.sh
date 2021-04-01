@@ -9,4 +9,4 @@ mkdir /etc/letsencrypt/live/thompsonboilerworks.ca -p
 docker stop $(docker ps -q --filter ancestor=liannus/tbwsite:reverseproxy)
 bash ~/.acme.sh/acme.sh --issue --standalone -d thompsonboilerworks.ca \
 --key-file       /etc/letsencrypt/live/thompsonboilerworks.ca/privkey.pem  \
---fullchain-file /etc/letsencrypt/live/thompsonboilerworks.ca/fullchain.pem --force
+--fullchain-file /etc/letsencrypt/live/thompsonboilerworks.ca/fullchain.pem
