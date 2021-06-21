@@ -9,7 +9,10 @@ var resume;
 router.post(
   "/api/email",
   [
-    check("origin").isIn(["CONTACT","CAREERS"]).withMessage("Must be equal to CONTACT or CAREERS"),
+    check('pageOrigin').custom((value, {req}) => {
+	console.log(`Attempt validate: ${value}`);
+	return ['CONTACT', 'CAREERS'].includes(value); 
+    }),
     check("name")
       .isLength({ min: 2 })
       .withMessage("Must be longer than 2")
