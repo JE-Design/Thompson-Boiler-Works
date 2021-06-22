@@ -32,8 +32,8 @@ const sendEmail = (form, resume, cb) => {
   });
 
   //format subject of email
-  const subject = `TBW-WEBSITE - ${form.origin} - FROM: ${form.name} ${
-    form.origin === "CONTACT" ? `REGARDING: ${form.subject}` : ""
+  const subject = `TBW-WEBSITE - ${form.pageOrigin} - FROM: ${form.name} ${
+    form.pageOrigin === "CONTACT" ? `REGARDING: ${form.subject}` : ""
   }`;
   //format email
   const options = {
@@ -41,7 +41,7 @@ const sendEmail = (form, resume, cb) => {
     to: receiver,
     subject: subject,
     attachments:
-      form.origin === "CAREERS" && form.resumeFormat === "upload"
+      form.pageOrigin === "CAREERS" && form.resumeFormat === "upload"
         ? [
             {
               filename: resume.filename,
@@ -49,11 +49,11 @@ const sendEmail = (form, resume, cb) => {
             },
           ]
         : [],
-    html: `<h1>${form.origin === "CONTACT" ? form.subject : "Careers Application"}</h1>
+    html: `<h1>${form.pageOrigin === "CONTACT" ? form.subject : "Careers Application"}</h1>
             <p>From: ${form.name} (${form.from})</p>
             <p>${form.body}</p>
             <p>${
-              form.resumeFormat === "upload" && form.origin === "CAREERS" ? form.resumeText : ""
+              form.resumeFormat === "upload" && form.pageOrigin === "CAREERS" ? form.resumeText : ""
             }</p>`,
   };
   //send email

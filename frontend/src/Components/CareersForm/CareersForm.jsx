@@ -94,7 +94,7 @@ const CareersForm = () => {
   //if form passes validation, send email
   const onSubmit = (data) => {
     const emailParameters = {
-      origin: "CAREERS",
+      pageOrigin: "CAREERS",
       name: data.name,
       from: data.email,
       subject: data.subject,
@@ -115,13 +115,11 @@ const CareersForm = () => {
         }
       })
       .catch((error) => {
-        if (error.response.status === 500) {
-          setOpenSnackbar(true);
-          setSnackbar({
-            severity: "error",
-            message: t("careers.form.fail"),
-          });
-        }
+        setOpenSnackbar(true);
+        setSnackbar({
+          severity: "error",
+          message: t("careers.form.fail"),
+        });
       });
   };
 

@@ -9,7 +9,10 @@ var resume;
 router.post(
   "/api/email",
   [
-    check("origin").isIn(["CONTACT","CAREERS"]).withMessage("Must be equal to CONTACT or CAREERS"),
+    check('pageOrigin').custom((value, {req}) => {
+	console.log(`Attempt validate: ${value}`);
+	return ['CONTACT', 'CAREERS'].includes(value); 
+    }),
     check("name")
       .isLength({ min: 2 })
       .withMessage("Must be longer than 2")
@@ -22,7 +25,7 @@ router.post(
       .normalizeEmail(),
     check("subject")
       .if(
-        body("origin")
+        body("pageOrigin")
           .not()
           .contains("CAREERS")
       )
@@ -36,7 +39,7 @@ router.post(
       .withMessage("Must be longer than 2")
       .escape(),
     check("resumeText")
-      .if(body("origin").contains("CAREERS"))
+      .if(body("pageOrigin").contains("CAREERS"))
       .if(body("resumeFormat").not().contains("upload"))
       .isLength({ min: 2 })
       .withMessage("Must be longer than 2")

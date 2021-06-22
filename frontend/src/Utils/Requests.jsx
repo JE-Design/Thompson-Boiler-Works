@@ -2,7 +2,7 @@ import axios from "axios";
 
 const sendEmail = emailParameters => {
   const emailObject = {
-    origin: emailParameters.origin,
+    pageOrigin: emailParameters.pageOrigin,
     name: emailParameters.name,
     from: emailParameters.from,
     subject: emailParameters.subject,
