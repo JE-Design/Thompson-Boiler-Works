@@ -36,7 +36,7 @@ const ContactForm = () => {
   //handles email submission
   const onSubmit = data => {
     const emailParameters = {
-      origin: "CONTACT",
+      pageOrigin: "CONTACT",
       name: data.name,
       from: data.email,
       subject: data.subject,
@@ -60,7 +60,7 @@ const ContactForm = () => {
             severity: "error",
             message: t("contact.form.badInput")
           });
-        } else if (error.response.status === 500) {
+        } else {
           setOpenSnackbar(true);
           setSnackbar({
             severity: "error",

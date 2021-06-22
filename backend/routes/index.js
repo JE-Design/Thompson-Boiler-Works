@@ -25,7 +25,7 @@ router.post(
       .normalizeEmail(),
     check("subject")
       .if(
-        body("origin")
+        body("pageOrigin")
           .not()
           .contains("CAREERS")
       )
@@ -39,7 +39,7 @@ router.post(
       .withMessage("Must be longer than 2")
       .escape(),
     check("resumeText")
-      .if(body("origin").contains("CAREERS"))
+      .if(body("pageOrigin").contains("CAREERS"))
       .if(body("resumeFormat").not().contains("upload"))
       .isLength({ min: 2 })
       .withMessage("Must be longer than 2")
