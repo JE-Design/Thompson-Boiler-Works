@@ -6,6 +6,7 @@ import {
   FormControlLabel,
   Radio,
   Typography,
+  CircularProgress
 } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
 import { string as yupstring, object as yupobject } from "yup";
@@ -49,6 +50,7 @@ const CareersForm = () => {
     message: "",
   });
   const [openSnackbar, setOpenSnackbar] = useState(false);
+  const [ apiCommunication, setApiCommunication ] = useState(false)
   const updateRadio = (e) => {
     setRadioValue(e.target.value);
   };
@@ -102,6 +104,7 @@ const CareersForm = () => {
       resumeFormat: data.resumeFormat,
       resumeText: data.resumeText,
     };
+    setApiCommunication(true);
     sendEmail(emailParameters)
       .then((response) => {
         if (response.status === 200) {
@@ -111,7 +114,7 @@ const CareersForm = () => {
           setSnackbar({
             severity: "success",
             message: t("careers.form.success"),
-          });
+          })
         }
       })
       .catch((error) => {
@@ -120,7 +123,10 @@ const CareersForm = () => {
           severity: "error",
           message: t("careers.form.fail"),
         });
-      });
+      })
+      .finally(()=> {
+        setApiCommunication(false);
+      })
   };
 
   return (
@@ -221,8 +227,9 @@ const CareersForm = () => {
             )}
           </div>
         </div>
-        <Button className="submit" type="submit" variant="contained">
-          {t("contact.form.button")}
+        <Button className="submit" type="submit" variant="contained" disabled={apiCommunication}>
+          {!apiCommunication && t("contact.form.button")}
+          {apiCommunication && <CircularProgress/>}
         </Button>
       </form>
       <CustomSnackbar
