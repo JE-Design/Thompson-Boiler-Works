@@ -11,8 +11,8 @@ import {
 import { useTranslation } from "react-i18next";
 import { string as yupstring, object as yupobject } from "yup";
 import { useForm } from "react-hook-form";
-import { sendEmail, sendFile } from "Utils/Requests";
-import { DropzoneArea } from "material-ui-dropzone";
+import { sendEmail, sendFile, deleteFile } from "Utils/Requests";
+import { DropzoneAreaBase } from 'material-ui-dropzone';
 import { CustomSnackbar } from "Components";
 
 import "./CareersForm.scss";
@@ -22,6 +22,7 @@ const MAX_FILE_SIZE = 3000000;
 const CareersForm = () => {
   const { t } = useTranslation();
   const styled = "blackUnderline";
+  const [acceptedFiles, setAcceptedFiles] = useState([])
   //form validation
   const { handleSubmit, reset, register, errors } = useForm({
     validationSchema: yupobject().shape({
@@ -56,27 +57,24 @@ const CareersForm = () => {
   };
 
   //called when a file is dropped
-  const onDrop = (file) => {
-    sendFile(file)
+  const onDrop = (files) => {
+    sendFile(files[0])
       .then((response) => {
         if (response.status === 200) {
+          setAcceptedFiles([{file: files[0]}])
           setOpenSnackbar(true);
           setSnackbar({
             severity: "success",
-            message: t("careers.form.success"),
+            message: t("careers.form.successUpload"),
           });
         }
       })
-      .catch((error) => {
-        if (error.response.status === 500) {
-          setOpenSnackbar(true);
-          setSnackbar({
-            severity: "error",
-            message: t("careers.form.errorFile"),
-          });
-        }
-      });
   };
+
+  const onDelete = (file) => {
+    setAcceptedFiles([]);
+    deleteFile();
+  }
 
   //called when a file is rejected
   const onRejected = (files) => {
@@ -115,13 +113,14 @@ const CareersForm = () => {
             severity: "success",
             message: t("careers.form.success"),
           })
+          setAcceptedFiles([]);
         }
       })
       .catch((error) => {
         setOpenSnackbar(true);
         setSnackbar({
           severity: "error",
-          message: t("careers.form.fail"),
+          message: error.response.status === 400 ? t("careers.form.missingResume") : t("careers.form.fail"),
         });
       })
       .finally(()=> {
@@ -211,10 +210,12 @@ const CareersForm = () => {
                 helperText={errors.resumeText ? errors.resumeText.message : ""}
               />
             ) : (
-              <DropzoneArea
+              <DropzoneAreaBase
                 key={refreshValue}
+                fileObjects={acceptedFiles}
                 dropzoneClass="resume-upload"
                 onDrop={onDrop}
+                onDelete={onDelete}
                 maxFileSize={MAX_FILE_SIZE}
                 onDropRejected={onRejected}
                 showPreviewsInDropzone={false}
@@ -223,7 +224,7 @@ const CareersForm = () => {
                 showPreviews={true}
                 useChipsForPreview={true}
                 showAlerts={false}
-              ></DropzoneArea>
+              />
             )}
           </div>
         </div>

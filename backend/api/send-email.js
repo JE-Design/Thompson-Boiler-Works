@@ -31,6 +31,15 @@ const sendEmail = (form, resume, cb) => {
     },
   });
 
+  // if not resume is provided, don't send an email and throw an error
+  if ((form.pageOrigin === "CAREERS") && (form.resumeFormat === "upload")) {
+    if (resume === undefined) { 
+      transporter.close()
+      cb(400, "No resume was uploaded");
+      return;
+    }
+  }
+
   //format subject of email
   const subject = `TBW-WEBSITE - ${form.pageOrigin} - FROM: ${form.name} ${
     form.pageOrigin === "CONTACT" ? `REGARDING: ${form.subject}` : ""
@@ -53,7 +62,7 @@ const sendEmail = (form, resume, cb) => {
             <p>From: ${form.name} (${form.from})</p>
             <p>${form.body}</p>
             <p>${
-              form.resumeFormat === "upload" && form.pageOrigin === "CAREERS" ? form.resumeText : ""
+              form.resumeFormat === "paste" && form.pageOrigin === "CAREERS" ? form.resumeText : ""
             }</p>`,
   };
   //send email

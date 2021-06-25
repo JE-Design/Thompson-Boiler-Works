@@ -8,7 +8,6 @@ form {
   flex-direction: column;
   .submit {
     margin: $default-spacing auto;
-    line-height: 40px;
     @include tablet {
       margin: $default-spacing 25%;
       padding: $default-spacing $default-spacing * 4;
