@@ -17,7 +17,7 @@ import { CustomSnackbar } from "Components";
 
 import "./CareersForm.scss";
 
-const MAX_FILE_SIZE = 3000000;
+const MAX_FILE_SIZE = 200000;
 
 const CareersForm = () => {
   const { t } = useTranslation();
@@ -58,10 +58,11 @@ const CareersForm = () => {
 
   //called when a file is dropped
   const onDrop = (files) => {
-    sendFile(files[0])
+    const file = files[0].file;
+    sendFile(file)
       .then((response) => {
         if (response.status === 200) {
-          setAcceptedFiles([{file: files[0]}])
+          setAcceptedFiles([{file}])
           setOpenSnackbar(true);
           setSnackbar({
             severity: "success",
@@ -69,27 +70,44 @@ const CareersForm = () => {
           });
         }
       })
+      .catch(()=>{
+        return;
+      })
   };
 
-  const onDelete = (file) => {
-    setAcceptedFiles([]);
-    deleteFile();
-  }
-
-  //called when a file is rejected
   const onRejected = (files) => {
+    const file = files[0];
     let rejectMessage =
-      files[0].size > MAX_FILE_SIZE
-        ? t("careers.form.largeFile")
-        : files[0].type !== "application/pdf"
-        ? t("careers.form.incorrectFile")
-        : t("careers.form.invalidFile");
+    file.size > MAX_FILE_SIZE
+      ? t("careers.form.largeFile")
+      : file.type !== "application/pdf"
+      ? t("careers.form.incorrectFile")
+      : t("careers.form.invalidFile");
     setOpenSnackbar(true);
     setSnackbar({
       severity: "error",
       message: rejectMessage,
     });
-  };
+  }
+
+  const onDelete = () => {
+    setAcceptedFiles([]);
+    deleteFile()
+      .then(()=>{
+        setOpenSnackbar(true);
+        setSnackbar({
+          severity: "success",
+          message: t("careers.form.successDelete"),
+        });
+      })
+      .catch(()=>{
+        setOpenSnackbar(true);
+        setSnackbar({
+          severity: "error",
+          message: t("careers.form.failedDelete"),
+        });
+      })
+  }
 
   //if form passes validation, send email
   const onSubmit = (data) => {
@@ -214,11 +232,11 @@ const CareersForm = () => {
                 key={refreshValue}
                 fileObjects={acceptedFiles}
                 dropzoneClass="resume-upload"
-                onDrop={onDrop}
+                onAdd={onDrop}
                 onDelete={onDelete}
                 maxFileSize={MAX_FILE_SIZE}
-                onDropRejected={onRejected}
                 showPreviewsInDropzone={false}
+                onDropRejected={onRejected}
                 acceptedFiles={["application/pdf"]}
                 filesLimit={1}
                 showPreviews={true}

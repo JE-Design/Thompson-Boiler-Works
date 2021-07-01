@@ -89,6 +89,8 @@
       "resumeText": "Resume",
       "success": "Application submitted successfully",
       "successUpload": "Resume uploaded successfully",
+      "successDelete": "File deleted successfully",
+      "failedDelete": "File was not deleted successfully",
       "errorFile": "Error uploading file",
       "incorrectFile": "Invalid file type",
       "invalidFile": "File is invalid",
