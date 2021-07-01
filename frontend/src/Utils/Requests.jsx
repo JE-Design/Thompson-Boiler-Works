@@ -29,4 +29,8 @@ const sendFile = file => {
     });
 };
 
-export { sendEmail, sendFile };
+const deleteFile = () => {
+  return axios.delete("/api/resume");
+}
+
+export { sendEmail, sendFile, deleteFile };

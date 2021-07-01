@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, TextField } from "@material-ui/core";
+import { Button, TextField, CircularProgress } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
 import { string as yupstring, object as yupobject } from "yup";
 import { useForm } from "react-hook-form";
@@ -15,6 +15,7 @@ const ContactForm = () => {
     severity: "error",
     message: ""
   });
+  const [apiCommunication, setApiCommunication] = useState(false)
   const [openSnackbar, setOpenSnackbar] = useState(false);
   //form validation
   const { handleSubmit, reset, register, errors } = useForm({
@@ -42,6 +43,7 @@ const ContactForm = () => {
       subject: data.subject,
       body: data.body
     };
+    setApiCommunication(true);
     sendEmail(emailParameters)
       .then(response => {
         if (response.status === 200) {
@@ -67,6 +69,9 @@ const ContactForm = () => {
             message: t("contact.form.fail")
           });
         }
+      })
+      .finally(() => {
+        setApiCommunication(false);
       });
   };
   return (
@@ -119,8 +124,9 @@ const ContactForm = () => {
           error={errors.body ? true : false}
           helperText={errors.body ? errors.body.message : ""}
         />
-        <Button variant="contained" type="submit">
-          {t("contact.form.button")}
+        <Button variant="contained" type="submit" disabled={apiCommunication}>
+          {!apiCommunication && t("contact.form.button")}
+          {apiCommunication && <CircularProgress/>}
         </Button>
       </form>
       <CustomSnackbar

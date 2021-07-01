@@ -88,11 +88,13 @@
       "paste": "Copy and Paste",
       "resumeText": "Resume",
       "success": "Application submitted successfully",
+      "successUpload": "Resume uploaded successfully",
       "errorFile": "Error uploading file",
       "incorrectFile": "Invalid file type",
       "invalidFile": "File is invalid",
       "largeFile": "File is too large",
       "fail": "Email failed to send",
+      "missingResume": "No resume was provided",
       "dropzoneText": "Upload your resume",
       "dropzoneLabel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }

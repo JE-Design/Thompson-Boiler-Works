@@ -55,6 +55,7 @@ router.post(
     }
     //call send email api and return status response
     sendEmail(req.body, resume, (status, data) => {
+      if (status === 200) resume = undefined;
       res.status(status).send(data);
     });
   }
@@ -75,5 +76,10 @@ router.post("/api/resume", (req, res) => {
     res.send(upload);
   });
 });
+
+router.delete("/api/resume", (req,res) => {
+  resume = undefined;
+  res.status(200).send();
+})
 
 module.exports = router;
