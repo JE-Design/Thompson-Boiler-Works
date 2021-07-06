@@ -23,6 +23,7 @@ const AboutPage = props => {
               </Typography>
               <div className="about-section-image">
                 <img src={aboutImage} alt={t(`about.section.${key}.imageAlt`)} />
+                <p>{t(`about.section.${key}.imageCaption`)}</p>
               </div>
             </div>
           ))}
