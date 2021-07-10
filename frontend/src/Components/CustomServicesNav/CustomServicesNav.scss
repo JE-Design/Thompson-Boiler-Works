@@ -10,6 +10,7 @@
   white-space: nowrap;
 
   @include desktop {
+    width: 15vw;
     border-bottom: 0;
     padding: 0;
     text-align: left;
@@ -45,6 +46,13 @@
     margin-bottom: 10px;
     font-weight: 400;
     font-size: $font-size-links;
+    text-align: left;
+    @include desktop {
+      width: 15vw;  
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 
   button:before {

@@ -52,9 +52,13 @@
     .service-image {
       margin: auto;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       max-height: 300px;
-
+      figcaption {
+        margin: 12px 0 12px 0;
+        max-width: 400px;
+      }
       @include tablet {
         justify-content: flex-end;
         padding-left: $default-spacing;
