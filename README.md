@@ -1,9 +1,11 @@
 ![Deploy to Amazon EB](https://github.com/ForkBombGIT/TBW-Website/workflows/Deploy%20to%20Amazon%20EB/badge.svg?branch=master)
 
 # Thompson Boiler Works
+
 <img src="TBW-mockups.png" width="100%" />
 
 ## Table of Contents
+
 - [About the Repo](#about-the-repo)
 - [Getting Started](#getting-started)
 - [Code Structure](#code-structure)
@@ -12,14 +14,15 @@
 - [Contributors](#contributors)
 - [License](#license)
 
-
 ## About the Repo
-This repo shows the development state of the website built at [ThompsonBoilerWorks.ca](https://ThompsonBoilerWorks.ca).
+
+This repo shows the development state of the website built at [ThompsonBoilerWorks.com](https://ThompsonBoilerWorks.com).
 
 Despite being available on github, this repository is intended as a read-only resource and has been licensed as such. Permissions are not given to use or modify this software.
 
 ## Getting Started
-*This section is intended for usage of future developers or upon permissional changes.*
+
+_This section is intended for usage of future developers or upon permissional changes._
 
 After cloning the repo to your local machine enter the root directory and run `make install-deps`.
 
@@ -32,7 +35,9 @@ The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
 ## Code Structure
+
 Explained here are the most important points of the code structure, where to find configs, etc.
+
 ```
 .
 ├── backend
@@ -41,7 +46,7 @@ Explained here are the most important points of the code structure, where to fin
 │   ├── package.json        # Backend code dependencies
 │   ├── index.js            # Main app file starting and handling node server.
 │   └── ...
-├── frontend                
+├── frontend
 │   ├── public              # Static assets that are deployed as-is when built
 │   ├── src                 # Code directory for frontend container
 │   │   ├── Assets          # Static assets (images, icons)
@@ -64,7 +69,9 @@ Explained here are the most important points of the code structure, where to fin
 ```
 
 ## Tech
-Frontend: 
+
+Frontend:
+
 - [React](https://reactjs.org/)
 - [Material-ui](https://material-ui.com/)
 - [SCSS](https://sass-lang.com/)
@@ -72,32 +79,36 @@ Frontend:
 - [Yup](https://github.com/jquense/yup)
 
 Backend:
+
 - [Node](https://nodejs.org/en/)
 - [Express](https://expressjs.com/)
 - [Google APIs](https://www.npmjs.com/package/googleapis)
 
 DevOps:
+
 - [Docker-compose](https://docs.docker.com/compose/)
 
-Linting and Formatting: 
+Linting and Formatting:
+
 - [Airbnb style guide](https://airbnb.io/javascript/react/)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 
-
 ## Deployment
+
 This website is currently deployed onto Amazon Web Services by making use of the free plans 750 hours of free EC2 usage.
 
 //more to come
 
 ## Contributors
-- Eros Di Pede
-  + [Github](https://github.com/ForkBombGIT)
-  + [Website](https://erosdipede.ca/)
-- Josh Gorman
-  + [Github](https://github.com/Liannus)
-  + [Website](https://joshgorman.ca/)
-  
-## License
-As this code is currently unlicensed, no permissions are given to use or modify this software.
 
+- Eros Di Pede
+  - [Github](https://github.com/ForkBombGIT)
+  - [Website](https://erosdipede.ca/)
+- Josh Gorman
+  - [Github](https://github.com/Liannus)
+  - [Website](https://joshgorman.ca/)
+
+## License
+
+As this code is currently unlicensed, no permissions are given to use or modify this software.
