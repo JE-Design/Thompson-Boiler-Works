@@ -3,7 +3,7 @@ import { Container, Typography } from "@material-ui/core";
 import "./ServiceCard.scss";
 
 const ServiceCard = props => {
-  const { id, reference, title, content, image, imageAlt } = props;
+  const { id, reference, title, content, image, imageAlt, imageCaption } = props;
   return (
     <div id={id} ref={reference} className="service">
       <Container className="service-container">
@@ -13,9 +13,10 @@ const ServiceCard = props => {
             {content}
           </Typography>
         </div>
-        <div className="service-image">
+        <figure className="service-image">
           <img src={image} alt={imageAlt} />
-        </div>
+          <figcaption>{imageCaption}</figcaption>
+        </figure>
       </Container>
     </div>
   );

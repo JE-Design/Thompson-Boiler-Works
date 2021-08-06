@@ -53,29 +53,40 @@
     "flavorText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "service": {
       "one": {
-        "title": "Service 1",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-        "imageAlt": "service 1"
+        "title": "Two 300 Ton Chiller Installation",
+        "body": "Two 7500 Ton chiller installation at the Federal CHCP (Central Heating and Cooling Plant). All associated Supply and return piping was 20-24”. Extensive heavy lift / rigging / offsite fabrication and commissioning.",
+        "imageAlt": "service 1",
+        "imageCaption": "caption"
       },
       "two": {
-        "title": "Service 2",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-        "imageAlt": "service 2"
+        "title": "Emergency Temporary Boiler Plant",
+        "body": "Emergency Temporary boiler plant main steam header fabrication and installation. All piping built and inspected to ASME B31.1 by TSSA (Technical Safety Standards Authority) with 100% X-Ray NDT inspections. Uninterrupted delivery to meet heating season and process demands.",
+        "imageAlt": "service 2",
+        "imageCaption": "caption"
       },
       "three": {
-        "title": "Service 3",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-        "imageAlt": "service 3"
+        "title": "Hospital Steam Boiler Package",
+        "body": "Hospital Steam boiler package installation. High pressure steam used for heating and process sanitation.",
+        "imageAlt": "service 3",
+        "imageCaption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat."
       },
       "four": {
-        "title": "Service 3",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-        "imageAlt": "service 3"
+        "title": "Industrial Maintenance",
+        "body": "Thompson has consistently shown leadership in an industrial market place by providing technical experience, knowledge and power production to its clients.",
+        "imageAlt": "service 3",
+        "imageCaption": "caption"
       },
       "five": {
-        "title": "Service 3",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-        "imageAlt": "service 3"
+        "title": "Fabrication",
+        "body": "Thompson has complete piping spool / structural and custom fabrication capabilities for Carbon Steel, Stainless Steel, Alloy's and Aluminum. All welding performed at our fabrication facilities is performed to meet or exceed TSSA, ASME & CWB.",
+        "imageAlt": "service 3",
+        "imageCaption": "caption"
+      },
+      "six": {
+        "title": "High Pressure Welding Capabilities",
+        "body": "Thompson has Field Installation / Fabrication capabilities for Carbon Steel, Stainless Steel, Alloy's and Aluminum. All welding performed is done to ASME & CWB qualified welding procedures.",
+        "imageAlt": "service 3",
+        "imageCaption": "caption"
       }
     }
   },

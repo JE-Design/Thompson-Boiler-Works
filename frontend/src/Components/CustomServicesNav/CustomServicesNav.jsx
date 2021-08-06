@@ -11,7 +11,7 @@ const CustomServicesNav = props => {
   const handleClick = index => {
     const serviceRefs = props.serviceRefs;
     window.scrollTo({
-      top: serviceRefs.current[index].current.offsetTop - 125,
+      top: serviceRefs.current[index].current.offsetTop - (125  - (window.width < 768) ? 200 : 0),
       behavior: "smooth"
     });
   };
@@ -27,7 +27,7 @@ const CustomServicesNav = props => {
   const buildNav = () => {
     const servicesKeys = Object.keys(props.servicesObject);
     return (
-      <Scrollspy items={navIds()} componentTag="div" currentClassName="active" offset={ -125 }>
+      <Scrollspy items={navIds()} componentTag="div" currentClassName="active" offset={ -200 }>
         {servicesKeys.map((key, index) => (
           <Link underline="none" component="button" key={key} onClick={() => handleClick(index)}>
             <Typography variant="h3">{t(`services.service.${key}.title`)}</Typography>

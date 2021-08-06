@@ -36,6 +36,7 @@ const ServicesPage = props => {
                 content={t(`services.service.${key}.body`)}
                 image={servicesImage}
                 imageAlt={t(`services.service.${key}.imageAlt`)}
+                imageCaption={t(`services.service.${key}.imageCaption`)}
               />
             ))}
         </div>
