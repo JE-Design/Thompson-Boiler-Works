@@ -37,12 +37,14 @@
     "title": "About",
     "section": {
       "one": {
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-        "imageAlt": "alt text"
+        "body": "Thompson Boiler Works Inc. was built on quality and continues to deliver on quality. Our core is our people and our customers. We provide premier service with benchmark levels of safety, turnaround time, and cooperation. We specialize in finding clear solutions to complex problems by partnering with our clients. Through teamwork we complete your projects safely, on time, and on budget.",
+        "imageAlt": "alt text",
+        "imageCaption": "image caption"
       },
       "two": {
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-        "imageAlt": "alt text"
+        "body": "Founded in 1988, privately owned and operated. Thompson Boiler Works has come a long way from its beginnings, originally specializing in commercial industrial boiler making and repairs. Today over 33 years later Thompson Boiler Works has encompassed other aspects of the commercial - industrial mechanical field, while still maintaining the core business of boilers and pressure vessels.",
+        "imageAlt": "alt text",
+        "imageCaption": "image caption"
       }
     }
   },
