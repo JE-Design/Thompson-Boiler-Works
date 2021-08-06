@@ -8,22 +8,22 @@
     "contact": "Contact"
   },
   "landing": {
-    "subtitle": "Welding since 1988",
+    "subtitle": "Your Welding Solutions for all industries",
     "about": {
       "title": "Who are we?",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
+      "body": " A multi service welding company providing innovative, custom solutions for a wide array of industrial, commercial, and agricultural clients.",
       "button": "Learn more about us!"
     },
     "services": {
       "title": "Services",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
+      "body": "Thompson Boiler Works Inc. together with our affiliated companies Ritchie’s Welding and McNolty Mechanical is able to offer our customers a wide range of versatile welding procedures & metal fabricating.  A full-service welding  operation , when you work with us you will receive precision results from certified welders who follow all trade regulations and practices keeping safety our top priority.",
       "imageCaption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "button": "Learn more about our services!",
       "imageAlt": "alt text"
     },
     "projects": {
       "title": "Projects",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
+      "body": "Large or Small projects when complex welding or outside-the box-thinking is needed in repairing or producing challenging tasks. Thompson Boiler Works is a one stop shop for your needs.  The team is engaged and strive daily in doing the work right, the first time.  We  have proven time and again that we  work well in crunch time to satisfy the need of our customers.",
       "button": "Learn more about our projects!",
       "imageAlt": {
         "one": "project 1",
