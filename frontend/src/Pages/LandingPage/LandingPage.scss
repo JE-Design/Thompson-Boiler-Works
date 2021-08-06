@@ -45,21 +45,16 @@
       color: $color-white;
       align-self: flex-end;
       justify-self: flex-start;
-      @include mobile {
-        margin-left: $default-spacing !important;
-      }
       @include tablet {
-        padding-bottom: $default-spacing * 6;
-        max-width: 40%;
+        padding-bottom: $default-spacing * 2;
       }
       @include desktop {
-        margin-left: $default-spacing * 4 !important;
-        padding-bottom: $default-spacing * 6;
-        max-width: 450px;
+        margin-left: $default-spacing * 2!important;
       }
 
       h1 {
         @include dynamic-fonts($font-size-landing-header);
+        font-weight: bold;
       }
       h3 {
         @include dynamic-fonts($font-size-subtitle);
@@ -102,7 +97,7 @@
         @extend .landing-section-body;
         @include desktop {
           float: left;
-          width: 40%;
+          width: 45%;
         }
       }
       .landing-services-image {
