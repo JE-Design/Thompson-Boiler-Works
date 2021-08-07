@@ -4,30 +4,15 @@ const secrets = require("../secret/back-secret.json");
 
 const sender = "contact.thompsonboilerworks@gmail.com";
 const receiver = "contact.thompsonboilerworks@gmail.com";
-const OAuth2 = google.auth.OAuth2;
-const oauth2Client = new OAuth2(
-  `${secrets.GMAIL_CLIENT_ID}`,
-  `${secrets.GMAIL_CLIENT_SECRET}`,
-  "https://developers.google.com/oauthplayground"
-);
-
-oauth2Client.setCredentials({
-  refresh_token: `${secrets.GMAIL_REFRESH_TOKEN}`,
-});
 
 const sendEmail = (form, resume, cb) => {
-
-  const accessToken = oauth2Client.getAccessToken();
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      type: "OAuth2",
       user: sender,
-      clientId: `${secrets.GMAIL_CLIENT_ID}`,
-      clientSecret: `${secrets.GMAIL_CLIENT_SECRET}`,
-      refreshToken: `${secrets.GMAIL_REFRESH_TOKEN}`,
-      accessToken: accessToken,
+      pass: `${secrets.GOOGLE_APP_PASSWORD}`
+      
     },
   });
 
