@@ -111,7 +111,7 @@
       "fail": "Email failed to send",
       "missingResume": "No resume was provided",
       "dropzoneText": "Upload your resume",
-      "dropzoneLabel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "dropzoneLabel": "Upload your resume in the pdf format, and ensure it's less than 2 mb."
     }
   },
   "projects": {

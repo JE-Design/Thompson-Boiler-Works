@@ -17,7 +17,7 @@ import { CustomSnackbar } from "Components";
 
 import "./CareersForm.scss";
 
-const MAX_FILE_SIZE = 200000;
+const MAX_FILE_SIZE = 2000000;
 
 const CareersForm = () => {
   const { t } = useTranslation();
