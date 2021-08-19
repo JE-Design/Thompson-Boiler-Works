@@ -36,14 +36,7 @@ const ContactPage = props => {
             <h2 className="contact-info-title">{t("contact.info.company")}</h2>
             <p className="contact-info-text">
               {`${t("contact.info.address")}
-              ${t("contact.info.city-province")}
-              ${t("contact.info.country")}
-              ${t("contact.info.postal-code")}
-            `}
-            </p>
-
-            <p className="contact-info-text">
-              {`${t("contact.info.email")}
+              ${t("contact.info.city-province")}, ${t("contact.info.country")}
               ${t("contact.info.phone")}
             `}
             </p>

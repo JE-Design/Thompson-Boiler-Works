@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "@material-ui/core";
-import { Email, LocationOn, Phone } from "@material-ui/icons";
+import { LocationOn, Phone } from "@material-ui/icons";
 import { FooterList } from "Components/";
 import { useTranslation } from "react-i18next";
 import logo from "Assets/images/tbw-logo.png";
@@ -16,10 +16,6 @@ const CustomFooter = () => {
     {
       icon: LocationOn,
       primaryText: t("footer.connectList.address")
-    },
-    {
-      icon: Email,
-      primaryText: t("footer.connectList.email")
     },
     {
       icon: Phone,
