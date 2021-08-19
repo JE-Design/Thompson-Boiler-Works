@@ -3,12 +3,12 @@ import { Typography } from "@material-ui/core/";
 
 import "./CustomDivider.scss";
 
-const CustomDivider = () => {
+const CustomDivider = ({copy}) => {
   return (
     <div className="divider">
       <div className="filter-gradient">
         <Typography className="divider-text" variant="h3" align="center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          {copy}
         </Typography>
       </div>
     </div>

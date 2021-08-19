@@ -27,7 +27,7 @@ const LandingPage = props => {
           <Typography variant="h3">{t("landing.subtitle")}</Typography>
         </div>
       </div>
-      <CustomDivider />
+      <CustomDivider copy={t("landing.divider")}/>
       <div id="top-section" className="landing-section">
         <Container>
           <Typography variant="h2" align="center">

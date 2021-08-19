@@ -8,22 +8,23 @@
     "contact": "Contact"
   },
   "landing": {
-    "subtitle": "Your Welding Solutions for all industries",
+    "subtitle": "Your welding solutions for all industries",
+    "divider": "Where no project is too complex",
     "about": {
       "title": "Who are we?",
-      "body": " A multi service welding company providing innovative, custom solutions for a wide array of industrial, commercial, and agricultural clients.",
+      "body": "A multi-service welding company that provides innovative, custom solutions for a wide array of industrial, commercial, and agricultural clients.",
       "button": "Learn more about us!"
     },
     "services": {
       "title": "Services",
-      "body": "Thompson Boiler Works Inc. together with our affiliated companies Ritchie’s Welding and McNolty Mechanical is able to offer our customers a wide range of versatile welding procedures & metal fabricating.  A full-service welding  operation , when you work with us you will receive precision results from certified welders who follow all trade regulations and practices keeping safety our top priority.",
+      "body": "Thompson Boiler Works Inc. with our affiliated companies, Ritchie’s Welding and McNolty Mechanical, offer our customers a wide range of versatile welding procedures & metal fabricating. As a full-service welding operation where safety is our top priority, clients receive accurate results from certified welders who follow all trade regulations and practices.",
       "imageCaption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "button": "Learn more about our services!",
       "imageAlt": "alt text"
     },
     "projects": {
       "title": "Projects",
-      "body": "Large or Small projects when complex welding or outside-the box-thinking is needed in repairing or producing challenging tasks. Thompson Boiler Works is a one stop shop for your needs.  The team is engaged and strive daily in doing the work right, the first time.  We  have proven time and again that we  work well in crunch time to satisfy the need of our customers.",
+      "body": "Thompson Boiler Works is a one-stop-shop for your needs. With the ability to tackle large or small projects when complex welding or outside-the box-thinking is needed.  The team is engaged and strives daily in doing the work correctly, the first time. We have proven time and time again that we work well in time-sensitive situations to meet deadlines and satisfy the need of our customers.",
       "button": "Learn more about our projects!",
       "imageAlt": {
         "one": "project 1",
@@ -37,14 +38,14 @@
     "title": "About",
     "section": {
       "one": {
-        "body": "Founded in 1988, privately owned and operated. Thompson Boiler Works has come a long way from its beginnings, originally specializing in commercial industrial boiler making and repairs. Today over 33 years later Thompson Boiler Works has encompassed other aspects of the commercial - industrial mechanical field, while still maintaining the core business of boilers and pressure vessels.",
-        "imageAlt": "alt text",
-        "imageCaption": "image caption"
+        "body": "Privately owned and operated since 1988. Thompson Boiler Works has come a long way from its beginnings. Originally specializing in commercial industrial boiler making and repairs, we now (over 33 years later) encompass other aspects of the commercial-industrial mechanical field while maintaining the core business of boilers and pressure vessels.",
+        "imageAlt": "Cooling Towers Replacement",
+        "imageCaption": "Cooling Towers Replacement"
       },
       "two": {
-        "body": "Thompson Boiler Works Inc. was built on quality and continues to deliver on quality. Our core is our people and our customers. We provide premier service with benchmark levels of safety, turnaround time, and cooperation. We specialize in finding clear solutions to complex problems by partnering with our clients. Through teamwork we complete your projects safely, on time, and on budget.",
-        "imageAlt": "alt text",
-        "imageCaption": "image caption"
+        "body": "Thompson Boiler Works Inc. was built on quality and continues to deliver our high standards. Our core value is our people and our customers. We provide premier service with benchmark levels of safety, turnaround time, and cooperation. While also specializing in finding solutions to complex problems by partnering with our clients. Through teamwork, we complete your projects safely, on time, and within budget.",
+        "imageAlt": "Roof Top Heat Exchanger Installation",
+        "imageCaption": "Roof Top Heat Exchanger Installation"
       }
     }
   },
@@ -111,7 +112,7 @@
       "fail": "Email failed to send",
       "missingResume": "No resume was provided",
       "dropzoneText": "Upload your resume",
-      "dropzoneLabel": "Upload your resume in the pdf format, and ensure it's less than 2 mb."
+      "dropzoneLabel": "Upload your resume as a pdf, and ensure it's less than 2 mb."
     }
   },
   "projects": {

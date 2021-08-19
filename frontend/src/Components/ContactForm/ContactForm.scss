@@ -20,6 +20,7 @@
     background: $color-secondary !important;
     margin: auto;
     padding: $default-spacing/2 100px $default-spacing/2 100px;
+    @include dynamic-fonts($font-size-links)
     .MuiCircularProgress-colorPrimary {
       color: #f0f0f0 !important;
     }

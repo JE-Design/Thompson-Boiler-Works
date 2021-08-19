@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { AppBar, Menu, MenuItem, Toolbar, Button, Tabs, Tab } from "@material-ui/core";
-import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import RenderInBrowser from "react-render-in-browser";
 import { RouterPaths } from "Utils/";
-import { LanguageMenu } from "Components/";
 import MenuIcon from "@material-ui/icons/Menu";
 import MediaQuery from "react-responsive";
 import "./CustomToolbar.scss";
@@ -93,7 +91,6 @@ const CustomToolbar = props => {
               })}
             </Tabs>
           </MediaQuery>
-          <LanguageMenu />
           <MediaQuery query="(max-width: 1023px)">
             <Button
               className="menu-button"
