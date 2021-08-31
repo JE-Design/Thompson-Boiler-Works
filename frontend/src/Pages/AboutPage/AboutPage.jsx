@@ -24,10 +24,10 @@ const AboutPage = props => {
               <Typography className="about-section-text" variant="body1">
                 {t(`about.section.${key}.body`)}
               </Typography>
-              <div className="about-section-image">
+              <figure className="about-section-image">
                 <img src={sectionImages[index]} alt={t(`about.section.${key}.imageAlt`)} />
-                <p>{t(`about.section.${key}.imageCaption`)}</p>
-              </div>
+                <figcaption><i>{t(`about.section.${key}.imageCaption`)}</i></figcaption>
+              </figure>
             </div>
           ))}
       </Container>

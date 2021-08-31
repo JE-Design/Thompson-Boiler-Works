@@ -9,11 +9,13 @@
   .about-section {
     margin-top: $default-spacing * 2;
     padding: 0 24px 0 24px;
+    display:flex;
+    flex-direction: column;
     @include desktop {
+      flex-direction: row;
       margin-top: $default-spacing * 5;
     }
     .about-section-text {
-      float: left;
       text-align: center;
       font-weight: 300;
       @include dynamic-fonts($font-size-content);
@@ -23,18 +25,23 @@
     }
     .about-section-image {
       text-align: center;
+      max-height: 400px;
+      margin-top: $default-spacing;
       @include desktop {
-        float: right;
-        width: 40%;
+        width: 50%;
+        margin-top: 0px;
       }
       img {
-        margin-top: $default-spacing * 2;
         width: 75%;
         height: auto;
+        max-height: 400px;
         @include desktop {
           margin-top: 0;
           width: 100%;
         }
+      }
+      figcaption {
+        margin: 12px 0 12px 0;
       }
     }
   }
