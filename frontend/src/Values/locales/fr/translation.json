@@ -8,22 +8,23 @@
     "contact": "Contact"
   },
   "landing": {
-    "subtitle": "Your Welding Solutions for all industries",
+    "subtitle": "Your welding solutions for all industries",
+    "divider": "Where no project is too complex",
     "about": {
       "title": "Who are we?",
-      "body": " A multi service welding company providing innovative, custom solutions for a wide array of industrial, commercial, and agricultural clients.",
+      "body": "A multi-service welding company that provides innovative, custom solutions for a wide array of industrial, commercial, and agricultural clients.",
       "button": "Learn more about us!"
     },
     "services": {
       "title": "Services",
-      "body": "Thompson Boiler Works Inc. together with our affiliated companies Ritchie’s Welding and McNolty Mechanical is able to offer our customers a wide range of versatile welding procedures & metal fabricating.  A full-service welding  operation , when you work with us you will receive precision results from certified welders who follow all trade regulations and practices keeping safety our top priority.",
+      "body": "Thompson Boiler Works Inc. with our affiliated companies, Ritchie’s Welding and McNolty Mechanical, offer our customers a wide range of versatile welding procedures & metal fabricating. As a full-service welding operation where safety is our top priority, clients receive accurate results from certified welders who follow all trade regulations and practices.",
       "imageCaption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "button": "Learn more about our services!",
       "imageAlt": "alt text"
     },
     "projects": {
       "title": "Projects",
-      "body": "Large or Small projects when complex welding or outside-the box-thinking is needed in repairing or producing challenging tasks. Thompson Boiler Works is a one stop shop for your needs.  The team is engaged and strive daily in doing the work right, the first time.  We  have proven time and again that we  work well in crunch time to satisfy the need of our customers.",
+      "body": "Thompson Boiler Works is a one-stop-shop for your needs. With the ability to tackle large or small projects when complex welding or outside-the box-thinking is needed.  The team is engaged and strives daily in doing the work correctly, the first time. We have proven time and time again that we work well in time-sensitive situations to meet deadlines and satisfy the need of our customers.",
       "button": "Learn more about our projects!",
       "imageAlt": {
         "one": "project 1",
@@ -37,12 +38,14 @@
     "title": "About",
     "section": {
       "one": {
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-        "imageAlt": "alt text"
+        "body": "Privately owned and operated since 1988. Thompson Boiler Works has come a long way from its beginnings. Originally specializing in commercial industrial boiler making and repairs, we now (over 33 years later) encompass other aspects of the commercial-industrial mechanical field while maintaining the core business of boilers and pressure vessels.",
+        "imageAlt": "Cooling Towers Replacement",
+        "imageCaption": "Cooling Towers Replacement"
       },
       "two": {
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-        "imageAlt": "alt text"
+        "body": "Thompson Boiler Works Inc. was built on quality and continues to deliver our high standards. Our core value is our people and our customers. We provide premier service with benchmark levels of safety, turnaround time, and cooperation. While also specializing in finding solutions to complex problems by partnering with our clients. Through teamwork, we complete your projects safely, on time, and within budget.",
+        "imageAlt": "Roof Top Heat Exchanger Installation",
+        "imageCaption": "Roof Top Heat Exchanger Installation"
       }
     }
   },
@@ -51,29 +54,40 @@
     "flavorText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "service": {
       "one": {
-        "title": "Service 1",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-        "imageAlt": "service 1"
+        "title": "Chiller Installation",
+        "body": "Two 7500 Ton chiller installation at the Federal CHCP (Central Heating and Cooling Plant). All associated Supply and return piping was 20-24”. Extensive heavy lift / rigging / offsite fabrication and commissioning.",
+        "imageAlt": "Cooling tower replacement at University of Ottawa",
+        "imageCaption": "Cooling tower replacement at University of Ottawa"
       },
       "two": {
-        "title": "Service 2",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-        "imageAlt": "service 2"
+        "title": "Rental Boilers",
+        "body": "Emergency Temporary boiler plant main steam header fabrication and installation. All piping built and inspected to ASME B31.1 by TSSA (Technical Safety Standards Authority) with 100% X-Ray NDT inspections. Uninterrupted delivery to meet heating season and process demands.",
+        "imageAlt": "Rental boilers available from our Ottawa storage facility",
+        "imageCaption": "Rental boilers available from our Ottawa storage facility"
       },
       "three": {
-        "title": "Service 3",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-        "imageAlt": "service 3"
+        "title": "Hospital Steam Boiler",
+        "body": "Hospital Steam boiler package installation. High pressure steam used for heating and process sanitation.",
+        "imageAlt": "Front View of 600 HP Fire Tube Boiler ready for retubing at Ottawa Hospital Facility.",
+        "imageCaption": "Front View of 600 HP Fire Tube Boiler ready for retubing at Ottawa Hospital Facility."
       },
       "four": {
-        "title": "Service 3",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-        "imageAlt": "service 3"
+        "title": "Industrial Maintenance",
+        "body": "Thompson has consistently shown leadership in an industrial market place by providing technical experience, knowledge and power production to its clients.",
+        "imageAlt": "Paper manufacturing plant boiler installation",
+        "imageCaption": "Paper manufacturing plant boiler installation"
       },
       "five": {
-        "title": "Service 3",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiamporttitor urna quis sapien rutrum volutpat.",
-        "imageAlt": "service 3"
+        "title": "Fabrication",
+        "body": "Thompson has complete piping spool / structural and custom fabrication capabilities for Carbon Steel, Stainless Steel, Alloy's and Aluminum. All welding performed at our fabrication facilities is performed to meet or exceed TSSA, ASME & CWB.",
+        "imageAlt": "Stairs at Ottawa Construction office",
+        "imageCaption": "Stairs at Ottawa Construction office"
+      },
+      "six": {
+        "title": "High Pressure Welding",
+        "body": "Thompson has Field Installation / Fabrication capabilities for Carbon Steel, Stainless Steel, Alloy's and Aluminum. All welding performed is done to ASME & CWB qualified welding procedures.",
+        "imageAlt": "High pressure welding at government facility",
+        "imageCaption": "High pressure welding at government facility"
       }
     }
   },
@@ -98,7 +112,7 @@
       "fail": "Email failed to send",
       "missingResume": "No resume was provided",
       "dropzoneText": "Upload your resume",
-      "dropzoneLabel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "dropzoneLabel": "Upload your resume as a pdf, and ensure it's less than 2 mb."
     }
   },
   "projects": {
@@ -136,10 +150,9 @@
     },
     "hoursList": {
       "title": "Hours Of Operation",
-      "weekdays": "Monday-Friday",
-      "weekends": "Saturday-Sunday",
-      "weekdayTimes": "5:00am-9:00pm",
-      "weekendTimes": "Closed"
+      "weekdays": "Monday - Friday",
+      "weekdayTimes": "7:00 am – 4:30 pm",
+      "allHourService": "24 hours on call service 7 days a week"
     },
     "imageAlt": "thompson boiler works logo"
   },

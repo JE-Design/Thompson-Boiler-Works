@@ -150,10 +150,9 @@
     },
     "hoursList": {
       "title": "Hours Of Operation",
-      "weekdays": "Monday-Friday",
-      "weekends": "Saturday-Sunday",
-      "weekdayTimes": "5:00am-9:00pm",
-      "weekendTimes": "Closed"
+      "weekdays": "Monday - Friday",
+      "weekdayTimes": "7:00 am – 4:30 pm",
+      "allHourService": "On call service available 24 hours a day, 7 days a week"
     },
     "imageAlt": "thompson boiler works logo"
   },
