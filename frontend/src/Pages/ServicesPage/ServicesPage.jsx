@@ -2,7 +2,13 @@ import React, { useLayoutEffect, useRef } from "react";
 import { PageHeader, ServiceCard,CustomServicesNav } from "Components/";
 import { Container } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
-import servicesImage from "Assets/images/contact-page-header.jpg";
+import servicesHeader from "Assets/images/contact-page-header.jpg";
+import serviceOne from "Assets/images/services-chiller-installation.jpg";
+import serviceTwo from "Assets/images/services-rental-boilers.jpg";
+import serviceThree from "Assets/images/services-hospital-steam-boiler.jpg";
+import serviceFour from "Assets/images/services-industrial-maintenance.jpg";
+import serviceFive from "Assets/images/services-fabrication.jpg";
+import serviceSix from "Assets/images/services-high-pressure.jpg";
 import "./ServicesPage.scss";
 
 const ServicesPage = props => {
@@ -14,9 +20,10 @@ const ServicesPage = props => {
   const serviceRefs = useRef(
     Array.from({ length: Object.keys(servicesObject).length }, () => React.createRef())
   );
+  const serviceImages = [serviceOne,serviceTwo,serviceThree,serviceFour,serviceFive,serviceSix]
   return (
     <>
-      <PageHeader imagePath={servicesImage} pageTitle={t("services.title")} />
+      <PageHeader imagePath={servicesHeader} pageTitle={t("services.title")} />
       <Container className="services-page">
         <div className="sticky-nav">
           <CustomServicesNav
@@ -34,7 +41,7 @@ const ServicesPage = props => {
                 key={key}
                 title={t(`services.service.${key}.title`)}
                 content={t(`services.service.${key}.body`)}
-                image={servicesImage}
+                image={serviceImages[index]}
                 imageAlt={t(`services.service.${key}.imageAlt`)}
                 imageCaption={t(`services.service.${key}.imageCaption`)}
               />

@@ -54,40 +54,40 @@
     "flavorText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "service": {
       "one": {
-        "title": "Two 300 Ton Chiller Installation",
+        "title": "Chiller Installation",
         "body": "Two 7500 Ton chiller installation at the Federal CHCP (Central Heating and Cooling Plant). All associated Supply and return piping was 20-24”. Extensive heavy lift / rigging / offsite fabrication and commissioning.",
-        "imageAlt": "service 1",
-        "imageCaption": "caption"
+        "imageAlt": "Cooling tower replacement at University of Ottawa",
+        "imageCaption": "Cooling tower replacement at University of Ottawa"
       },
       "two": {
-        "title": "Emergency Temporary Boiler Plant",
+        "title": "Rental Boilers",
         "body": "Emergency Temporary boiler plant main steam header fabrication and installation. All piping built and inspected to ASME B31.1 by TSSA (Technical Safety Standards Authority) with 100% X-Ray NDT inspections. Uninterrupted delivery to meet heating season and process demands.",
-        "imageAlt": "service 2",
-        "imageCaption": "caption"
+        "imageAlt": "Rental boilers available from our Ottawa storage facility",
+        "imageCaption": "Rental boilers available from our Ottawa storage facility"
       },
       "three": {
-        "title": "Hospital Steam Boiler Package",
+        "title": "Hospital Steam Boiler",
         "body": "Hospital Steam boiler package installation. High pressure steam used for heating and process sanitation.",
-        "imageAlt": "service 3",
-        "imageCaption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat."
+        "imageAlt": "Front View of 600 HP Fire Tube Boiler ready for retubing at Ottawa Hospital Facility.",
+        "imageCaption": "Front View of 600 HP Fire Tube Boiler ready for retubing at Ottawa Hospital Facility."
       },
       "four": {
         "title": "Industrial Maintenance",
         "body": "Thompson has consistently shown leadership in an industrial market place by providing technical experience, knowledge and power production to its clients.",
-        "imageAlt": "service 3",
-        "imageCaption": "caption"
+        "imageAlt": "Paper manufacturing plant boiler installation",
+        "imageCaption": "Paper manufacturing plant boiler installation"
       },
       "five": {
         "title": "Fabrication",
         "body": "Thompson has complete piping spool / structural and custom fabrication capabilities for Carbon Steel, Stainless Steel, Alloy's and Aluminum. All welding performed at our fabrication facilities is performed to meet or exceed TSSA, ASME & CWB.",
-        "imageAlt": "service 3",
-        "imageCaption": "caption"
+        "imageAlt": "Stairs at Ottawa Construction office",
+        "imageCaption": "Stairs at Ottawa Construction office"
       },
       "six": {
-        "title": "High Pressure Welding Capabilities",
+        "title": "High Pressure Welding",
         "body": "Thompson has Field Installation / Fabrication capabilities for Carbon Steel, Stainless Steel, Alloy's and Aluminum. All welding performed is done to ASME & CWB qualified welding procedures.",
-        "imageAlt": "service 3",
-        "imageCaption": "caption"
+        "imageAlt": "High pressure welding at government facility",
+        "imageCaption": "High pressure welding at government facility"
       }
     }
   },

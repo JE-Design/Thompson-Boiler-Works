@@ -4,8 +4,10 @@
 
 .service {
   margin-top: $default-spacing;
+  min-height: 400px;
   .service-container {
     display: flex;
+    min-height: 400px;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: $default-spacing * 2;
@@ -50,26 +52,26 @@
     }
 
     .service-image {
-      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      max-height: 300px;
+      max-height: 400px;
       figcaption {
         margin: 12px 0 12px 0;
         max-width: 400px;
+        text-align: center;
       }
       @include tablet {
-        justify-content: flex-end;
         padding-left: $default-spacing;
       }
-
       @include desktop {
-        justify-content: flex-end;
         padding-left: $default-spacing;
       }
 
       img {
+        object-fit: cover;
+        max-height: 300px;
         max-width: 400px;
         @include mobile {
           min-width: 250px;
