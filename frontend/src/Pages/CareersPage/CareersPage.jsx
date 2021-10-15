@@ -2,7 +2,7 @@ import React, { useLayoutEffect } from "react";
 import { PageHeader, CareersForm } from "Components/";
 import { Container, Typography } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
-import aboutImage from "Assets/images/contact-page-header.jpg";
+import aboutImage from "Assets/images/contact/contact-page-header.jpg";
 import "./CareersPage.scss";
 
 const CareersPage = props => {

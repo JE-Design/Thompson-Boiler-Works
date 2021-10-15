@@ -2,7 +2,7 @@ import React, { useLayoutEffect } from "react";
 import { Typography, Container } from "@material-ui/core/";
 import { useTranslation } from "react-i18next";
 import { PageHeader, ProjectCard } from "Components/";
-import projectsImage from "Assets/images/contact-page-header.jpg";
+import projectsImage from "Assets/images/contact/contact-page-header.jpg";
 import "./ProjectsPage.scss";
 
 const ProjectsPage = props => {

@@ -9,15 +9,15 @@
   .landing-section:nth-of-type(2n) {
     color: $color-light-gray;
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-      url("../../Assets/images/divider.png");
+      url("../../Assets/images/landing/divider.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  .landing-title {
+  &-title {
     display: flex;
-    background-image: url("../../Assets/images/landing.png");
+    background-image: url("../../Assets/images/landing/landing.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -49,7 +49,7 @@
         padding-bottom: $default-spacing * 2;
       }
       @include desktop {
-        margin-left: $default-spacing * 2!important;
+        margin-left: $default-spacing * 2 !important;
       }
 
       h1 {
@@ -62,14 +62,20 @@
       }
     }
   }
+  #services-section {
+    display: flex;
+    justify-content: center;
+  }
   .landing-section {
     width: 100%;
     display: flex;
     text-align: center;
     padding: $default-spacing * 3 0 $default-spacing * 3 0;
-
     @include desktop {
       padding: 10vh 0 10vh 0;
+    }
+    .landing-section-flex {
+      max-width: 1600px;
     }
     h2 {
       @include dynamic-fonts(60px);
@@ -86,24 +92,36 @@
       padding: $default-spacing/2 $default-spacing;
       margin: auto;
       background: $color-secondary !important;
-      @include dynamic-fonts($font-size-links)
+      @include dynamic-fonts($font-size-links);
     }
     .landing-section-body {
-      margin: 0 $default-spacing * 4 $default-spacing * 4 $default-spacing * 4;
+      margin: 0 $default-spacing * 4 $default-spacing * 2 $default-spacing * 4;
       padding-top: $default-spacing * 2;
       font-weight: 400;
+      &--projects {
+        margin: 0 $default-spacing * 4 $default-spacing * 2 $default-spacing * 4;
+      }
     }
     .landing-services-body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: $default-spacing * 2;
+      @include desktop {
+        flex-direction: row;
+        padding: $default-spacing * 2 $default-spacing * 4;
+        align-items: center;
+      }
       .landing-section-body {
         @extend .landing-section-body;
         @include desktop {
           float: left;
           width: 45%;
+          margin-bottom: 0px;
         }
       }
       .landing-services-image {
         text-align: center;
-        margin-bottom: $default-spacing * 2;
         @include desktop {
           float: right;
           width: 40%;
@@ -112,7 +130,6 @@
           width: 75%;
           height: auto;
           @include desktop {
-            margin-top: $default-spacing * 2.1;
             width: 100%;
           }
         }
@@ -125,9 +142,10 @@
     }
     .landing-projects-image {
       img {
-        margin: 0px $default-spacing $default-spacing * 4 $default-spacing;
-        width: 160px;
-        height: 100px;
+        margin: 0px $default-spacing $default-spacing * 2 $default-spacing;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
       }
     }
   }

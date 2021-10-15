@@ -2,13 +2,13 @@ import React, { useLayoutEffect, useRef } from "react";
 import { PageHeader, ServiceCard,CustomServicesNav } from "Components/";
 import { Container } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
-import servicesHeader from "Assets/images/contact-page-header.jpg";
-import serviceOne from "Assets/images/services-chiller-installation.jpg";
-import serviceTwo from "Assets/images/services-rental-boilers.jpg";
-import serviceThree from "Assets/images/services-hospital-steam-boiler.jpg";
-import serviceFour from "Assets/images/services-industrial-maintenance.jpg";
-import serviceFive from "Assets/images/services-fabrication.jpg";
-import serviceSix from "Assets/images/services-high-pressure.jpg";
+import servicesHeader from "Assets/images/contact/contact-page-header.jpg";
+import serviceOne from "Assets/images/services/services-chiller-installation.jpg";
+import serviceTwo from "Assets/images/services/services-rental-boilers.jpg";
+import serviceThree from "Assets/images/services/services-hospital-steam-boiler.jpg";
+import serviceFour from "Assets/images/services/services-industrial-maintenance.jpg";
+import serviceFive from "Assets/images/services/services-fabrication.jpg";
+import serviceSix from "Assets/images/services/services-high-pressure.jpg";
 import "./ServicesPage.scss";
 
 const ServicesPage = props => {

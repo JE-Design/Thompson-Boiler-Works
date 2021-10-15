@@ -3,7 +3,7 @@
 @import "Styles/MediaQueries.scss";
 
 .divider {
-  background-image: url("../../Assets/images/divider.png");
+  background-image: url("../../Assets/images/landing/divider.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +23,8 @@
   justify-content: center;
   align-items: center;
   color: white;
-  background-image: linear-gradient(to top, transparent 0%, black 90%), linear-gradient(to bottom, transparent 0%, black 90%);
+  background-image: linear-gradient(to top, transparent 0%, black 90%),
+    linear-gradient(to bottom, transparent 0%, black 90%);
   height: 100% !important;
   width: 100% !important;
 }

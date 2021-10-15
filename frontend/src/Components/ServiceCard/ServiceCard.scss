@@ -5,6 +5,7 @@
 .service {
   margin-top: $default-spacing;
   min-height: 400px;
+  display: flex;
   .service-container {
     display: flex;
     min-height: 400px;
