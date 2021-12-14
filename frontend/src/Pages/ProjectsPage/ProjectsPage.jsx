@@ -2,7 +2,10 @@ import React, { useLayoutEffect } from "react";
 import { Typography, Container } from "@material-ui/core/";
 import { useTranslation } from "react-i18next";
 import { PageHeader, ProjectCard } from "Components/";
-import projectsImage from "Assets/images/contact/contact-page-header.jpg";
+import projectsHeader from "Assets/images/projects/projects-zibi.png";
+import projectOne from "Assets/images/projects/projects-strathcona.jpg";
+import projectTwo from "Assets/images/projects/projects-zibi.jpg";
+import projectThree from "Assets/images/projects/projects-kirkland.jpg";
 import "./ProjectsPage.scss";
 
 const ProjectsPage = props => {
@@ -12,10 +15,10 @@ const ProjectsPage = props => {
   });
 
   const projectsObject = t("projects.project", { returnObjects: true });
-
+  const projectImages = [projectOne, projectTwo, projectThree];
   return (
     <>
-      <PageHeader imagePath={projectsImage} pageTitle="Projects" />
+      <PageHeader imagePath={projectsHeader} pageTitle="Projects" />
       <Container className="projects-page">
         <div className="flavor">
           <Typography align="center" variant="h6" className="flavor-text">
@@ -24,12 +27,12 @@ const ProjectsPage = props => {
         </div>
         <div className="projects">
           {projectsObject != null &&
-            Object.keys(projectsObject).map(key => (
+            Object.keys(projectsObject).map((key, index) => (
               <ProjectCard
                 key={key}
                 title={t(`projects.project.${key}.title`)}
                 body={t(`projects.project.${key}.body`)}
-                imageLink={t(`projects.project.${key}.imageLink`)}
+                image={projectImages[index]}
                 imageAlt={t(`projects.project.${key}.imageAlt`)}
               />
             ))}

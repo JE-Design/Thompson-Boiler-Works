@@ -9,7 +9,7 @@ import "./AboutPage.scss";
 
 const AboutPage = props => {
   const { t } = useTranslation();
-  const sectionImages = [aboutImageOne,aboutImageTwo];
+  const sectionImages = [aboutImageOne, aboutImageTwo];
   const aboutObject = t("about.section", { returnObjects: true });
   useLayoutEffect(() => {
     props.setNotLanding(true);
@@ -19,7 +19,7 @@ const AboutPage = props => {
       <PageHeader imagePath={headerImage} pageTitle={t("about.title")} />
       <Container className="about-page">
         {aboutObject != null &&
-          Object.keys(aboutObject).map((key,index) => (
+          Object.keys(aboutObject).map((key, index) => (
             <div className="about-section" key={key}>
               <Typography className="about-section-text" variant="body1">
                 {t(`about.section.${key}.body`)}
