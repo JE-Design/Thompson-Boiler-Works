@@ -7,8 +7,8 @@ const CustomDivider = ({copy}) => {
   return (
     <div className="divider">
       <div className="filter-gradient">
-        <Typography className="divider-text" variant="h3" align="center">
-          {copy}
+        <Typography className="divider-text" variant="body" align="center">
+          <i>{copy}</i>
         </Typography>
       </div>
     </div>

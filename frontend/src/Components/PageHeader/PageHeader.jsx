@@ -1,12 +1,14 @@
 import React from "react";
 import "./PageHeader.scss";
 
-const PageHeader = ({ imagePath, pageTitle }) => {
+const PageHeader = ({ imagePath, pageTitle, backgroundPosition }) => {
+  console.log(backgroundPosition)
   return (
     <div
       className="page-header"
       style={{
-        backgroundImage: `url(${imagePath})`
+        backgroundImage: `url(${imagePath})`,
+        backgroundPosition: `${backgroundPosition}`
       }}
     >
       <h1 className="page-header-text">{pageTitle}</h1>

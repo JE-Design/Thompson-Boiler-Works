@@ -18,11 +18,11 @@ const ProjectsPage = props => {
   const projectImages = [projectOne, projectTwo, projectThree];
   return (
     <>
-      <PageHeader imagePath={projectsHeader} pageTitle="Projects" />
+      <PageHeader imagePath={projectsHeader} pageTitle="Projects" backgroundPosition="center" />
       <Container className="projects-page">
         <div className="flavor">
           <Typography align="center" variant="h6" className="flavor-text">
-            {t("services.flavorText")}
+            <i>{t("services.flavorText")}</i>
           </Typography>
         </div>
         <div className="projects">

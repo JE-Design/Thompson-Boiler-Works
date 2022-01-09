@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import { PageHeader, ServiceCard,CustomServicesNav } from "Components/";
 import { Container } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
-import servicesHeader from "Assets/images/contact/contact-page-header.jpg";
+import servicesHeader from "Assets/images/services/services-header.jpg";
 import serviceOne from "Assets/images/services/services-chiller-installation.jpg";
 import serviceTwo from "Assets/images/services/services-rental-boilers.jpg";
 import serviceThree from "Assets/images/services/services-hospital-steam-boiler.jpg";
@@ -23,7 +23,7 @@ const ServicesPage = props => {
   const serviceImages = [serviceOne,serviceTwo,serviceThree,serviceFour,serviceFive,serviceSix]
   return (
     <>
-      <PageHeader imagePath={servicesHeader} pageTitle={t("services.title")} />
+      <PageHeader imagePath={servicesHeader} pageTitle={t("services.title")} backgroundPosition="center" />
       <Container className="services-page">
         <div className="sticky-nav">
           <CustomServicesNav

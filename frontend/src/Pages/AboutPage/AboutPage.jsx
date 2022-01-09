@@ -2,7 +2,7 @@ import React, { useLayoutEffect } from "react";
 import { PageHeader } from "Components/";
 import { Container, Typography } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
-import headerImage from "Assets/images/contact/contact-page-header.jpg";
+import headerImage from "Assets/images/about/about-us-header.jpg";
 import aboutImageOne from "Assets/images/about/about-us-cooling-towers.jpg"
 import aboutImageTwo from "Assets/images/about/about-us-installation.jpg"
 import "./AboutPage.scss";
@@ -16,7 +16,7 @@ const AboutPage = props => {
   });
   return (
     <>
-      <PageHeader imagePath={headerImage} pageTitle={t("about.title")} />
+      <PageHeader imagePath={headerImage} pageTitle={t("about.title")} backgroundPosition="center" />
       <Container className="about-page">
         {aboutObject != null &&
           Object.keys(aboutObject).map((key, index) => (

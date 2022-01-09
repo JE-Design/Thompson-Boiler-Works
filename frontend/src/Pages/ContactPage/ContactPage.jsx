@@ -16,7 +16,7 @@ const ContactPage = props => {
 
   return (
     <>
-      <PageHeader imagePath={contactImage} pageTitle="Contact" />
+      <PageHeader imagePath={contactImage} pageTitle="Contact" backgroundPosition="bottom" />
       <Container className="contact-page">
         <ContactForm />
         <div className="contact-info">
