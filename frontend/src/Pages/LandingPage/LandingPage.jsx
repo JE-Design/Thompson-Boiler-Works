@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import CustomDivider from "Components/CustomDivider/CustomDivider";
-import { Typography, Container, Button, Box } from "@material-ui/core/";
+import { Typography, Container, Button } from "@material-ui/core/";
 import { Link } from "react-router-dom";
 import routerPaths from "Utils/RouterPaths";
 import { useTranslation } from "react-i18next";
-import landing from "Assets/images/landing/landing.png";
+import services from "Assets/images/landing/landing-services.jpg";
 import projectOne from "Assets/images/landing/landing-projects-1.JPG";
 import projectTwo from "Assets/images/landing/landing-projects-2.JPG";
 import projectThree from "Assets/images/landing/landing-projects-3.JPG";
@@ -48,7 +48,7 @@ const LandingPage = props => {
         </Container>
       </div>
       <div id="services-section" style={landingSectionServices} className="landing-section">
-        <Box className="landing-section-flex" sx={{ display: 'flex', flexDirection: 'column'  }}>
+        <Container sx={{ display: 'flex', flexDirection: 'column'  }}>
           <Typography variant="h2" align="center">
             {t("landing.services.title")}
           </Typography>
@@ -57,8 +57,7 @@ const LandingPage = props => {
               {t("landing.services.body")}
             </Typography>
             <div className="landing-services-image">
-              <img src={landing} alt={t("landing.services.imageAlt")} />
-              <Typography variant="h6">{t("landing.services.imageCaption")}</Typography>
+              <img src={services} alt={t("landing.services.imageAlt")} />
             </div>
           </div>
           <RenderInBrowser except ie>
@@ -66,7 +65,7 @@ const LandingPage = props => {
               <Button variant="contained">{t("landing.services.button")}</Button>
             </Link>
           </RenderInBrowser>
-        </Box>
+        </Container>
       </div>
       <div className="landing-section">
         <Container>
@@ -80,7 +79,7 @@ const LandingPage = props => {
             <img src={projectOne} className="object-cover" alt={t("landing.projects.imageAlt.one")} />
             <img src={projectTwo} className="object-cover" alt={t("landing.projects.imageAlt.two")} />
             <img src={projectThree} className="object-cover" alt={t("landing.projects.imageAlt.three")} />
-            <img src={projectFour} className="object-cover" alt={t("landing.projects.imageAlt.four")} />
+            <img src={projectFour} className="object-cover no-margin" alt={t("landing.projects.imageAlt.four")} />
           </div>
           <RenderInBrowser except ie>
             <Link to={routerPaths.PROJECTS}>

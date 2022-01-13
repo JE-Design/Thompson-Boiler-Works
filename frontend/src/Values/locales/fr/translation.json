@@ -18,7 +18,6 @@
     "services": {
       "title": "Services",
       "body": "Thompson Boiler Works Inc. with our affiliated companies, Ritchie’s Welding and McNolty Mechanical, offer our customers a wide range of versatile welding procedures & metal fabricating. As a full-service welding operation where safety is our top priority, clients receive accurate results from certified welders who follow all trade regulations and practices.",
-      "imageCaption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "button": "Learn more about our services!",
       "imageAlt": "alt text"
     },
@@ -51,39 +50,26 @@
   },
   "services": {
     "title": "Services",
-    "flavorText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "service": {
       "one": {
-        "title": "Four 700 Ton Chiller Installation",
-        "body": "Installation at the University of Ottawa (Central Heating and cooling plant). All associated supply and return piping was 10,12,16” Stainless Steel piping and fiberglass. Extensive heavy lift/rigging/offsite fabrication and commissioning.",
-        "imageAlt": "Cooling tower replacement at University of Ottawa",
-        "imageCaption": "Cooling tower replacement at University of Ottawa"
-      },
-      "two": {
         "title": "Rental Boilers",
         "body": "Emergency Temporary boiler plant main steam header fabrication and installation. All piping built and inspected to ASME B31.1 by TSSA (Technical Safety Standards Authority) with 100% X-Ray NDT inspections. Uninterrupted delivery to meet heating season and process demands.",
         "imageAlt": "Rental boilers available from our Ottawa storage facility",
         "imageCaption": "Rental boilers available from our Ottawa storage facility"
       },
-      "three": {
-        "title": "Hospital Steam Boiler",
-        "body": "Hospital Steam boiler package installation. High pressure steam used for heating and process sanitation.",
-        "imageAlt": "Front View of 600 HP Fire Tube Boiler ready for retubing at Ottawa Hospital Facility.",
-        "imageCaption": "Front View of 600 HP Fire Tube Boiler ready for retubing at Ottawa Hospital Facility."
-      },
-      "four": {
+      "two": {
         "title": "Industrial Maintenance",
         "body": "Thompson has consistently shown leadership in an industrial market place by providing technical experience, knowledge and power production to its clients.",
         "imageAlt": "Paper manufacturing plant boiler installation",
         "imageCaption": "Paper manufacturing plant boiler installation"
       },
-      "five": {
+      "three": {
         "title": "Fabrication",
         "body": "Thompson Boiler Works Inc. associated company Ritchie’s Welding has complete piping spool/structural and custom fabrication capabilities for Carbon Steel, Stainless Steel, Alloy’s and Aluminium.  All welding performed at our fabrication facilities is performed to meet or exceed TSSA,ASME & CWB.",
         "imageAlt": "Stairs at Ottawa Construction office",
         "imageCaption": "Stairs at Ottawa Construction office"
       },
-      "six": {
+      "four": {
         "title": "High Pressure Welding",
         "body": "Thompson has Field Installation / Fabrication capabilities for Carbon Steel, Stainless Steel, Alloy's and Aluminum. All welding performed is done to ASME & CWB qualified welding procedures.",
         "imageAlt": "High pressure welding at government facility",
@@ -117,25 +103,32 @@
   },
   "projects": {
     "title": "Projects",
-    "flavorText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "flavorText": "Customized solutions to your most challening projects",
     "project": {
       "one": {
         "title": "Strathcona",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus.",
-        "imageLink": "/assets/images/contact-page-header.jpg",
+        "body": "Installation of a new saturated steam boiler 80,000 lbs/hr. the scope of work required dismantling of the old boiler, rigging new boiler inside the steam plant, installing the new boiler with all accessories which included economizer, FD fan, piping for all services, heat exchanger, controls, and electricals.",
         "imageAlt": "project 1"
       },
       "two": {
         "title": "Zibi",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus.",
-        "imageLink": "/assets/images/contact-page-header.jpg",
+        "body": "TBW has been part of the ZIBI development for the last 4 years. In working with the Eddy Lands Projects team (Ed Brunet and Ledcor), we have been part of the team that installed their infrastructure program for the District Thermal system. This system will provide the necessary energy requirements to the mix usage development plan with LTHW (Low Temperature Hot Water), HTHW (Hot Temperature Hot Water) and CHW (Chilled Water). These networks of pipes are being linked between Ontario and Quebec under the Union Bridge and underground through Booth St and other surrounding streets.",
         "imageAlt": "project 2"
       },
       "three": {
         "title": "Kirkland Lake",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus.",
-        "imageLink": "/assets/images/contact-page-header.jpg",
         "imageAlt": "project 3"
+      },
+      "four": {
+        "title": "Hospital Steam Boiler",
+        "body": "Hospital Steam boiler package installation. High pressure steam used for heating and process sanitation.",
+        "imageAlt": "Front View of 600 HP Fire Tube Boiler ready for retubing at Ottawa Hospital Facility."
+      },
+      "five": {
+        "title": "Four 700 Ton Chiller Installation",
+        "body": "Installation at the University of Ottawa (Central Heating and cooling plant). All associated supply and return piping was 10,12,16” Stainless Steel piping and fiberglass. Extensive heavy lift/rigging/offsite fabrication and commissioning.",
+        "imageAlt": "Cooling tower replacement at University of Ottawa"
       }
     }
   },

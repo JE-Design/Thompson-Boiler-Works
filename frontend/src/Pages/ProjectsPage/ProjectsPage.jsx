@@ -2,10 +2,12 @@ import React, { useLayoutEffect } from "react";
 import { Typography, Container } from "@material-ui/core/";
 import { useTranslation } from "react-i18next";
 import { PageHeader, ProjectCard } from "Components/";
-import projectsHeader from "Assets/images/projects/projects-zibi.png";
+import projectsHeader from "Assets/images/projects/projects-header.png";
 import projectOne from "Assets/images/projects/projects-strathcona.jpg";
 import projectTwo from "Assets/images/projects/projects-zibi.jpg";
 import projectThree from "Assets/images/projects/projects-kirkland.jpg";
+import projectFour from "Assets/images/projects/projects-hospital-steam-boiler.jpg";
+import projectFive from "Assets/images/projects/projects-chiller-installation.jpg";
 import "./ProjectsPage.scss";
 
 const ProjectsPage = props => {
@@ -15,14 +17,14 @@ const ProjectsPage = props => {
   });
 
   const projectsObject = t("projects.project", { returnObjects: true });
-  const projectImages = [projectOne, projectTwo, projectThree];
+  const projectImages = [projectOne, projectTwo, projectThree, projectFour, projectFive];
   return (
     <>
       <PageHeader imagePath={projectsHeader} pageTitle="Projects" backgroundPosition="center" />
       <Container className="projects-page">
         <div className="flavor">
           <Typography align="center" variant="h6" className="flavor-text">
-            <i>{t("services.flavorText")}</i>
+            <i>{t("projects.flavorText")}</i>
           </Typography>
         </div>
         <div className="projects">
