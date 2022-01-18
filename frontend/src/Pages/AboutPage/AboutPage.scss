@@ -35,6 +35,7 @@
         width: 75%;
         height: auto;
         max-height: 400px;
+        object-fit: cover;
         @include desktop {
           margin-top: 0;
           width: 100%;

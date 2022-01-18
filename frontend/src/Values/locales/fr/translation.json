@@ -19,17 +19,17 @@
       "title": "Services",
       "body": "Thompson Boiler Works Inc. with our affiliated companies, Ritchie’s Welding and McNolty Mechanical, offer our customers a wide range of versatile welding procedures & metal fabricating. As a full-service welding operation where safety is our top priority, clients receive accurate results from certified welders who follow all trade regulations and practices.",
       "button": "Learn more about our services!",
-      "imageAlt": "alt text"
+      "imageAlt": "Transalata Toronto, Ontario – Removal of Generator at Power Plant"
     },
     "projects": {
       "title": "Projects",
       "body": "Thompson Boiler Works is a one-stop-shop for your needs. With the ability to tackle large or small projects when complex welding or outside-the box-thinking is needed.  The team is engaged and strives daily in doing the work correctly, the first time. We have proven time and time again that we work well in time-sensitive situations to meet deadlines and satisfy the need of our customers.",
       "button": "Learn more about our projects!",
       "imageAlt": {
-        "one": "project 1",
-        "two": "project 2",
-        "three": "project 3",
-        "four": "project 4"
+        "one": "Zibi – Ottawa – Description Underground piping welding station",
+        "two": "Zibi – Ottawa Manifold Header – Temporary Heating Plant",
+        "three": "Ottawa University - Installation of Cooling Tower",
+        "four": "Ottawa University – Main Header Cooling Tower"
       }
     }
   },
@@ -106,27 +106,27 @@
     "flavorText": "Customized solutions to your most challening projects",
     "project": {
       "one": {
-        "title": "Strathcona",
-        "body": "Installation of a new saturated steam boiler 80,000 lbs/hr. the scope of work required dismantling of the old boiler, rigging new boiler inside the steam plant, installing the new boiler with all accessories which included economizer, FD fan, piping for all services, heat exchanger, controls, and electricals.",
-        "imageAlt": "project 1"
-      },
-      "two": {
         "title": "Zibi",
         "body": "TBW has been part of the ZIBI development for the last 4 years. In working with the Eddy Lands Projects team (Ed Brunet and Ledcor), we have been part of the team that installed their infrastructure program for the District Thermal system. This system will provide the necessary energy requirements to the mix usage development plan with LTHW (Low Temperature Hot Water), HTHW (Hot Temperature Hot Water) and CHW (Chilled Water). These networks of pipes are being linked between Ontario and Quebec under the Union Bridge and underground through Booth St and other surrounding streets.",
-        "imageAlt": "project 2"
+        "imageAlt": "Zibi - Ottawa – Bridge connection from power plant to building connecting Ontario and Quebec."
+      },
+      "two": {
+        "title": "Strathcona",
+        "body": "Installation of a new saturated steam boiler 80,000 lbs/hr. the scope of work required dismantling of the old boiler, rigging new boiler inside the steam plant, installing the new boiler with all accessories which included economizer, FD fan, piping for all services, heat exchanger, controls, and electricals.",
+        "imageAlt": "Strathcona-Ontario – Installation PRV station on steam line"
       },
       "three": {
         "title": "Kirkland Lake",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor urna quissapien rutrum volutpat. Nullam lectus magna, lacinia nec orci quis, cursus convallismagna. Cras dictum laoreet tellus a rutrum. Donec ac commodo augue. Donec enim metus,fringilla id suscipit ac, malesuada non ligula. Aenean ultricies quam ut sem eleifend,quis condimentum diam rutrum. Duis pulvinar at turpis vitae dignissim. Proin vehiculadignissim cursus.",
-        "imageAlt": "project 3"
+        "body": "Removal and Replacement of Economizer of a Heat Recovery Steam Generator (HRSG) at North Power Station in Kirkland Lake, the weigh of the Replacement Economizer is 80,000 lbs. For this removal and installation of the Economizer a mobile crane with counterweights (500-ton Super Max) was required. The new Economizer arrived in a horizontal position on site with a lifted bed. The procedure for lifting the Economizer from horizontal position to vertical position required two mobile cranes with a rigging procedure in place, using a 550-ton super Max crane with a 90-ton crane.",
+        "imageAlt": "Kirkland Lake Power Plant – Removal of old Heat Exchanger"
       },
       "four": {
-        "title": "Hospital Steam Boiler",
-        "body": "Hospital Steam boiler package installation. High pressure steam used for heating and process sanitation.",
+        "title": "Queenway Carleton Hospital",
+        "body": "High pressure steam used for heating and processing sanitation.",
         "imageAlt": "Front View of 600 HP Fire Tube Boiler ready for retubing at Ottawa Hospital Facility."
       },
       "five": {
-        "title": "Four 700 Ton Chiller Installation",
+        "title": "Ottawa University",
         "body": "Installation at the University of Ottawa (Central Heating and cooling plant). All associated supply and return piping was 10,12,16” Stainless Steel piping and fiberglass. Extensive heavy lift/rigging/offsite fabrication and commissioning.",
         "imageAlt": "Cooling tower replacement at University of Ottawa"
       }
