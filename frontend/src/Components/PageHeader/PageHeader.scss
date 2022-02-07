@@ -3,9 +3,21 @@
 @import "Styles/MediaQueries.scss";
 
 .page-header {
+  position: relative;
   background-size: cover;
   height: 45vh;
   margin-top: $navbar-height;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(transparent 75%, black 100%);
+    opacity: 0.9;
+    height: 45vh;
+  }
   @include mobile {
     margin-top: $navbar-height - 50;
   }
