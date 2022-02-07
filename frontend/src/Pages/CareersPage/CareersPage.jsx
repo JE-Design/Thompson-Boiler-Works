@@ -12,7 +12,7 @@ const CareersPage = props => {
   });
   return (
     <>
-      <PageHeader imagePath={headerImage} pageTitle={t("careers.title")} backgroundPosition="bottom"/>
+      <PageHeader imagePath={headerImage} pageTitle={t("careers.title")} backgroundPosition="center"/>
       <Container className="careers-page">
         <div className="flavor">
           <Typography align="center" className="flavor-text" variant="h5">
