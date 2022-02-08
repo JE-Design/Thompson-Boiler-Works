@@ -6,7 +6,6 @@ import RenderInBrowser from "react-render-in-browser";
 import { RouterPaths } from "Utils/";
 import MenuIcon from "@material-ui/icons/Menu";
 import MediaQuery from "react-responsive";
-import "./CustomToolbar.scss";
 import logo from "Assets/images/tbw-logo.png";
 
 import "./CustomToolbar.scss";
@@ -77,7 +76,7 @@ const CustomToolbar = props => {
             </div>
           </Link>
           <MediaQuery query="(min-width: 1024px)">
-            <Tabs value={currentPage} onChange={handleChange}>
+            <Tabs value={currentPage} onChange={handleChange} TabIndicatorProps={{style: {background: "#a31621"}}}>
               {options.map(value => {
                 return (
                   <Tab
