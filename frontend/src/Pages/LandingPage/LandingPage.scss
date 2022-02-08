@@ -9,7 +9,7 @@
   .landing-section:nth-of-type(2n) {
     color: $color-light-gray;
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-      url("../../Assets/images/landing/divider.png");
+      url("../../Assets/images/landing/divider.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,7 +17,7 @@
 
   &-title {
     display: flex;
-    background-image: url("../../Assets/images/landing/landing.png");
+    background-image: url("../../Assets/images/landing/landing.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;

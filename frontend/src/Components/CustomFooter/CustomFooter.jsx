@@ -3,7 +3,7 @@ import { Container } from "@material-ui/core";
 import { LocationOn, Phone } from "@material-ui/icons";
 import { FooterList } from "Components/";
 import { useTranslation } from "react-i18next";
-import logo from "Assets/images/tbw-logo.png";
+import logo from "Assets/images/tbw-logo.webp";
 import { RouterPaths } from "Utils";
 import RenderInBrowser from "react-render-in-browser";
 import "./CustomFooter.scss";
@@ -48,7 +48,7 @@ const CustomFooter = () => {
     {
       secondaryText: t("footer.hoursList.weekdays"),
       primaryText: t("footer.hoursList.weekdayTimes")
-    },
+    }
   ];
   return (
     <div className="footer">
@@ -66,7 +66,9 @@ const CustomFooter = () => {
         <div className="footer-column">
           <h3 className="footer-subtitle">{hourTitle}</h3>
           <FooterList listItems={hoursList} classname="hour-items" />
-          <p className="footer-allHourService"><i>{t("footer.hoursList.allHourService")}</i></p>
+          <p className="footer-allHourService">
+            <i>{t("footer.hoursList.allHourService")}</i>
+          </p>
         </div>
         <div className="footer-column">
           <img className="footer-logo" src={logo} alt={t("footer.imageAlt")} />

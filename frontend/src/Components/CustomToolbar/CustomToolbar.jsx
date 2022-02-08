@@ -6,7 +6,7 @@ import RenderInBrowser from "react-render-in-browser";
 import { RouterPaths } from "Utils/";
 import MenuIcon from "@material-ui/icons/Menu";
 import MediaQuery from "react-responsive";
-import logo from "Assets/images/tbw-logo.png";
+import logo from "Assets/images/tbw-logo.webp";
 
 import "./CustomToolbar.scss";
 
@@ -41,7 +41,7 @@ const CustomToolbar = props => {
   };
 
   const handleMnClose = event => {
-    var currPage = event.currentTarget.childNodes[0];
+    const currPage = event.currentTarget.childNodes[0];
     setCurrentPage(currPage === undefined ? "" : currPage.data.toLowerCase());
     setAnchorMn(null);
   };
@@ -76,7 +76,11 @@ const CustomToolbar = props => {
             </div>
           </Link>
           <MediaQuery query="(min-width: 1024px)">
-            <Tabs value={currentPage} onChange={handleChange} TabIndicatorProps={{style: {background: "#a31621"}}}>
+            <Tabs
+              value={currentPage}
+              onChange={handleChange}
+              TabIndicatorProps={{ style: { background: "#a31621" } }}
+            >
               {options.map(value => {
                 return (
                   <Tab
@@ -85,7 +89,7 @@ const CustomToolbar = props => {
                     label={value}
                     to={`/${value.toLowerCase()}`}
                     component={Link}
-                  ></Tab>
+                  />
                 );
               })}
             </Tabs>

@@ -2,9 +2,9 @@ import React, { useLayoutEffect } from "react";
 import { PageHeader } from "Components/";
 import { Container, Typography } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
-import headerImage from "Assets/images/about/about-us-header.jpg";
-import aboutImageOne from "Assets/images/about/about-us-cooling-towers.jpg"
-import aboutImageTwo from "Assets/images/about/about-us-installation.jpg"
+import headerImage from "Assets/images/about/about-us-header.webp";
+import aboutImageOne from "Assets/images/about/about-us-cooling-towers.webp";
+import aboutImageTwo from "Assets/images/about/about-us-installation.webp";
 import "./AboutPage.scss";
 
 const AboutPage = props => {
@@ -16,7 +16,11 @@ const AboutPage = props => {
   });
   return (
     <>
-      <PageHeader imagePath={headerImage} pageTitle={t("about.title")} backgroundPosition="center" />
+      <PageHeader
+        imagePath={headerImage}
+        pageTitle={t("about.title")}
+        backgroundPosition="center"
+      />
       <Container className="about-page">
         {aboutObject != null &&
           Object.keys(aboutObject).map((key, index) => (
@@ -26,7 +30,9 @@ const AboutPage = props => {
               </Typography>
               <figure className="about-section-image">
                 <img src={sectionImages[index]} alt={t(`about.section.${key}.imageAlt`)} />
-                <figcaption><i>{t(`about.section.${key}.imageCaption`)}</i></figcaption>
+                <figcaption>
+                  <i>{t(`about.section.${key}.imageCaption`)}</i>
+                </figcaption>
               </figure>
             </div>
           ))}

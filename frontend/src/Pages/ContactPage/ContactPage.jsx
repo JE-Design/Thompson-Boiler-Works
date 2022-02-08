@@ -4,7 +4,7 @@ import { PageHeader, ContactForm } from "Components/";
 import { Container } from "@material-ui/core";
 import { Skeleton } from "@material-ui/lab";
 import secrets from "secret/front-secret.json";
-import contactImage from "Assets/images/contact/contact-page-header.jpg";
+import contactImage from "Assets/images/contact/contact-page-header.webp";
 import "./ContactPage.scss";
 
 const ContactPage = props => {

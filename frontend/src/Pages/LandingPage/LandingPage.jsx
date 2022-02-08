@@ -4,12 +4,12 @@ import { Typography, Container, Button } from "@material-ui/core/";
 import { Link } from "react-router-dom";
 import routerPaths from "Utils/RouterPaths";
 import { useTranslation } from "react-i18next";
-import services from "Assets/images/landing/landing-services.jpg";
-import projectOne from "Assets/images/landing/landing-projects-1.JPG";
-import projectTwo from "Assets/images/landing/landing-projects-2.JPG";
-import projectThree from "Assets/images/landing/landing-projects-3.JPG";
-import projectFour from "Assets/images/landing/landing-projects-4.JPG";
-import servicesBackground from "Assets/images/landing/divider.png";
+import services from "Assets/images/landing/landing-services.webp";
+import projectOne from "Assets/images/landing/landing-projects-1.webp";
+import projectTwo from "Assets/images/landing/landing-projects-2.webp";
+import projectThree from "Assets/images/landing/landing-projects-3.webp";
+import projectFour from "Assets/images/landing/landing-projects-4.webp";
+import servicesBackground from "Assets/images/landing/divider.webp";
 import RenderInBrowser from "react-render-in-browser";
 
 import "./LandingPage.scss";
@@ -31,7 +31,7 @@ const LandingPage = props => {
           <Typography variant="h3">{t("landing.subtitle")}</Typography>
         </div>
       </div>
-      <CustomDivider copy={t("landing.divider")}/>
+      <CustomDivider copy={t("landing.divider")} />
       <div id="top-section" className="landing-section">
         <Container>
           <Typography variant="h2" align="center">
@@ -48,7 +48,7 @@ const LandingPage = props => {
         </Container>
       </div>
       <div id="services-section" style={landingSectionServices} className="landing-section">
-        <Container sx={{ display: 'flex', flexDirection: 'column'  }}>
+        <Container sx={{ display: "flex", flexDirection: "column" }}>
           <Typography variant="h2" align="center">
             {t("landing.services.title")}
           </Typography>
@@ -72,14 +72,33 @@ const LandingPage = props => {
           <Typography variant="h2" align="center">
             {t("landing.projects.title")}
           </Typography>
-          <Typography className="landing-section-body landing-section-body--projects" variant="body1">
+          <Typography
+            className="landing-section-body landing-section-body--projects"
+            variant="body1"
+          >
             {t("landing.projects.body")}
           </Typography>
           <div className="landing-projects-image">
-            <img src={projectOne} className="object-cover" alt={t("landing.projects.imageAlt.one")} />
-            <img src={projectTwo} className="object-cover" alt={t("landing.projects.imageAlt.two")} />
-            <img src={projectThree} className="object-cover" alt={t("landing.projects.imageAlt.three")} />
-            <img src={projectFour} className="object-cover no-margin" alt={t("landing.projects.imageAlt.four")} />
+            <img
+              src={projectOne}
+              className="object-cover"
+              alt={t("landing.projects.imageAlt.one")}
+            />
+            <img
+              src={projectTwo}
+              className="object-cover"
+              alt={t("landing.projects.imageAlt.two")}
+            />
+            <img
+              src={projectThree}
+              className="object-cover"
+              alt={t("landing.projects.imageAlt.three")}
+            />
+            <img
+              src={projectFour}
+              className="object-cover no-margin"
+              alt={t("landing.projects.imageAlt.four")}
+            />
           </div>
           <RenderInBrowser except ie>
             <Link to={routerPaths.PROJECTS}>
