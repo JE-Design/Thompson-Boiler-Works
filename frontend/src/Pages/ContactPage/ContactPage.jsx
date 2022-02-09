@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import { PageHeader, ContactForm } from "Components/";
 import { Container } from "@material-ui/core";
 import { Skeleton } from "@material-ui/lab";
-import secrets from "secret/front-secret.json";
 import contactImage from "Assets/images/contact/contact-page-header.webp";
 import "./ContactPage.scss";
 
@@ -29,7 +28,7 @@ const ContactPage = props => {
             frameBorder="0"
             onLoad={() => setHidden(false)}
             style={{ border: 0 }}
-            src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZy1pVWMKzkwRzSNkeLZIx5s&key=${secrets.GMAPS_API_KEY}`}
+            src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZy1pVWMKzkwRzSNkeLZIx5s&key=${process.env.REACT_APP_GMAPS_API_KEY}`}
             allowFullScreen
           />
           <div className="contact-info-div">
