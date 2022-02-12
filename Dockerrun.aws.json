@@ -55,9 +55,15 @@
       "name": "backend",
       "image": "liannus/tbwsite:backend",
       "essential": true,
+<<<<<<< Updated upstream
       "cpu": 250,
       "memory": 128,
       "memoryReservation": 128,
+=======
+      "cpu": 1000,
+      "memory": 500,
+      "memoryReservation": 500,
+>>>>>>> Stashed changes
       "mountPoints": [
         {
           "sourceVolume": "tbw-secrets-backend",
