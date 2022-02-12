@@ -2,116 +2,32 @@
   "AWSEBDockerrunVersion": 2,
     "volumes": [
     {
-      "name": "letsencrypt-conf",
-      "host": {
-        "sourcePath": "/etc/letsencrypt"
-      }
-    },
-    {
-      "name": "tbw-secrets-frontend",
-      "host": {
-        "sourcePath": "/tmp/secret/frontend"
-      }
-    },
-    {
       "name": "tbw-secrets-backend",
       "host": {
         "sourcePath": "/tmp/secret/backend"
-      }
-    },
-    {
-      "name": "tbw-secrets-reverseproxy",
-      "host": {
-        "sourcePath": "/tmp/secret/reverseproxy"
       }
     }
   ],
   "containerDefinitions": [
     {
-      "name": "frontend",
-      "image": "liannus/tbwsite:frontend",
-      "essential": true,
-      "cpu": 250,
-      "memory": 850,
-      "memoryReservation": 500,
-      "linuxParameters": {
-          "maxSwap": 1024,
-          "swappiness": 60
-      },
-      "mountPoints": [
-        {
-          "sourceVolume": "tbw-secrets-frontend",
-          "containerPath": "/frontend/src/secret"
-        }
-      ],
-      "dependsOn": [
-        {
-          "containerName": "backend",
-          "condition": "START"
-        }
-      ]
-    },
-    {
       "name": "backend",
       "image": "liannus/tbwsite:backend",
       "essential": true,
-<<<<<<< Updated upstream
-      "cpu": 250,
-      "memory": 128,
-      "memoryReservation": 128,
-=======
+
       "cpu": 1000,
       "memory": 500,
       "memoryReservation": 500,
->>>>>>> Stashed changes
       "mountPoints": [
         {
           "sourceVolume": "tbw-secrets-backend",
           "containerPath": "/backend/secret"
         }
-      ]
-    },
-    {
-      "name": "reverseproxy",
-      "image": "liannus/tbwsite:reverseproxy",
-      "cpu": 250,
-      "essential": true,
-      "memory": 128,
-      "memoryReservation": 128,
-      "mountPoints": [
-        {
-          "sourceVolume": "letsencrypt-conf",
-          "containerPath": "/etc/letsencrypt"
-        },
-        {
-          "sourceVolume": "tbw-secrets-reverseproxy",
-          "containerPath": "/reverseproxy/secret"
-        }
       ],
       "portMappings": [
         {
-          "hostPort": 80,
-          "containerPort": 80,
+          "hostPort": 18554,
+          "containerPort": 5000,
           "protocol": "tcp"
-        },
-        {
-          "hostPort": 443,
-          "containerPort": 443,
-          "protocol": "tcp"
-        }
-      ],
-      "links": [
-        "frontend", 
-        "backend"
-      ],
-      "dependsOn": [
-        {
-          "containerName": "frontend",
-           "condition": "START"
-        },
-        {
-          "containerName": "backend",
-           "condition": "START"
         }
       ]
     }
