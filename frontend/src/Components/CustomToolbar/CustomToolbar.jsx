@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { AppBar, Menu, MenuItem, Toolbar, Button, Tabs, Tab } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
-import RenderInBrowser from "react-render-in-browser";
 import { RouterPaths } from "Utils/";
+import RenderInBrowser from "react-render-in-browser";
 import MenuIcon from "@material-ui/icons/Menu";
 import MediaQuery from "react-responsive";
 import logo from "Assets/images/tbw-logo.webp";
@@ -13,10 +13,9 @@ import "./CustomToolbar.scss";
 const CustomToolbar = props => {
   const location = useLocation();
   const { t } = useTranslation();
-  const [toolbarColor, setToolbarColor] = useState("#0b121000");
+  const toolbarColor = "#0b1210"
   const [anchorMn, setAnchorMn] = React.useState(null);
   const [currentPage, setCurrentPage] = React.useState(location.pathname.replace("/", ""));
-  const { notLanding } = props;
   const title = t("title");
   const options = [
     t("nav.about"),
@@ -25,12 +24,6 @@ const CustomToolbar = props => {
     t("nav.careers"),
     t("nav.contact")
   ];
-  // set toolbar to gray if not on landing
-  useEffect(() => {
-    if (notLanding) setToolbarColor("#0b1210");
-    else setToolbarColor("transparent");
-    setCurrentPage(location.pathname.replace("/", ""));
-  }, [notLanding, location.pathname]);
 
   const handleChange = (event, newValue) => {
     setCurrentPage(newValue);
@@ -46,23 +39,12 @@ const CustomToolbar = props => {
     setAnchorMn(null);
   };
 
-  // update toolbar color on scroll
-  window.addEventListener("scroll", () => {
-    // if on landing, else set toolbar to non transparent gray
-    if (!notLanding) {
-      // if scroll is not at 0
-      if (window.scrollY > 0) setToolbarColor(`#0b1210`);
-      // if scroll is at zero, make toolbar transparent
-      else setToolbarColor("transparent");
-    } else setToolbarColor("#0b1210");
-  });
   return (
     <RenderInBrowser except ie>
       <AppBar
         className="toolbar"
         style={{
           backgroundColor: toolbarColor,
-          transition: !notLanding ? "background-color 0.5s" : ""
         }}
       >
         <Toolbar>
@@ -77,7 +59,7 @@ const CustomToolbar = props => {
           </Link>
           <MediaQuery query="(min-width: 1024px)">
             <Tabs
-              value={currentPage}
+              value={currentPage === "" ? false : currentPage}
               onChange={handleChange}
               TabIndicatorProps={{ style: { background: "#a31621" } }}
             >
@@ -99,6 +81,7 @@ const CustomToolbar = props => {
               className="menu-button"
               aria-controls="nav-menu"
               aria-haspopup="true"
+              aria-label="navigation menu"
               onClick={handleMnClick}
             >
               <MenuIcon />

@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React from "react";
 import { Typography, Container } from "@material-ui/core/";
 import { useTranslation } from "react-i18next";
 import { PageHeader, ProjectCard } from "Components/";
@@ -12,9 +12,6 @@ import "./ProjectsPage.scss";
 
 const ProjectsPage = props => {
   const { t } = useTranslation();
-  useLayoutEffect(() => {
-    props.setNotLanding(true);
-  });
 
   const projectsObject = t("projects.project", { returnObjects: true });
   const projectImages = [projectOne, projectTwo, projectThree, projectFour, projectFive];

@@ -3,6 +3,10 @@
 @import "Styles/MediaQueries.scss";
 
 .landing {
+  margin-top: 90px;
+  @include mobile {
+    margin-top: 70px;
+  }
   .landing-section:nth-of-type(2n + 1) {
     color: $color-text-gray;
   }
@@ -20,14 +24,13 @@
     background-image: url("../../Assets/images/landing/landing.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     background-position: bottom;
-    @include tablet {
-      background-position: left !important;
-    }
+    height: 80vh;
+    position: relative;
 
-    &:after {
-      content: "";
+    &:before {
+      content: " ";
+      display: block;
       position: absolute;
       top: 0;
       right: 0;
@@ -35,20 +38,26 @@
       left: 0;
       background-image: linear-gradient(transparent 75%, black 100%);
       opacity: 0.9;
+      height: 80vh;
     }
 
     .landing-title-text {
-      margin-left: $default-spacing * 2 !important;
-      max-width: 90%;
-      padding-bottom: $default-spacing * 2;
-      z-index: 4;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-content: center;
+      text-align: center;
       color: $color-white;
-      align-self: flex-end;
-      justify-self: flex-start;
+      width: 100%;
+      height: 100%;
+      z-index: 4;
       @include tablet {
+        text-align: left;
         padding-bottom: $default-spacing * 2;
+        margin-left: $default-spacing * 2 !important;
       }
       @include desktop {
+        text-align: left;
         margin-left: $default-spacing * 2 !important;
       }
 
@@ -56,9 +65,10 @@
         @include dynamic-fonts($font-size-landing-header);
         font-weight: bold;
       }
-      h3 {
+      p {
         @include dynamic-fonts($font-size-subtitle);
         padding-left: 4px;
+        margin-bottom: $default-spacing;
       }
     }
   }

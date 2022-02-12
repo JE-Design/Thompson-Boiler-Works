@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React from "react";
 import { PageHeader } from "Components/";
 import { Container, Typography } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
@@ -11,9 +11,6 @@ const AboutPage = props => {
   const { t } = useTranslation();
   const sectionImages = [aboutImageOne, aboutImageTwo];
   const aboutObject = t("about.section", { returnObjects: true });
-  useLayoutEffect(() => {
-    props.setNotLanding(true);
-  });
   return (
     <>
       <PageHeader

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { CustomToolbar, CustomFooter } from "Components/";
 import { RouterPaths, ScrollToTop } from "Utils";
@@ -13,31 +13,29 @@ import {
 import "./Styles/App.scss";
 
 const App = () => {
-  // to-do, setNotLanding to true when not on landing page
-  const [notLanding, setNotLanding] = useState(false);
   return (
     <Router>
       <ScrollToTop />
       <div className="App">
-        <CustomToolbar notLanding={notLanding} />
+        <CustomToolbar />
         <Switch>
           <Route path={RouterPaths.ABOUT}>
-            <AboutPage setNotLanding={setNotLanding} />
+            <AboutPage />
           </Route>
           <Route path={RouterPaths.SERVICES}>
-            <ServicesPage setNotLanding={setNotLanding} />
+            <ServicesPage />
           </Route>
           <Route path={RouterPaths.CAREERS}>
-            <CareersPage setNotLanding={setNotLanding} />
+            <CareersPage />
           </Route>
           <Route path={RouterPaths.CONTACT}>
-            <ContactPage setNotLanding={setNotLanding} />
+            <ContactPage />
           </Route>
           <Route path={RouterPaths.PROJECTS}>
-            <ProjectsPage setNotLanding={setNotLanding} />
+            <ProjectsPage />
           </Route>
           <Route path={RouterPaths.LANDING}>
-            <LandingPage setNotLanding={setNotLanding} />
+            <LandingPage />
           </Route>
         </Switch>
         <CustomFooter />

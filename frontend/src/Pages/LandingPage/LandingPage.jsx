@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import CustomDivider from "Components/CustomDivider/CustomDivider";
 import { Typography, Container, Button } from "@material-ui/core/";
 import { Link } from "react-router-dom";
@@ -20,15 +20,12 @@ const landingSectionServices = {
 
 const LandingPage = props => {
   const { t } = useTranslation();
-  useEffect(() => {
-    props.setNotLanding(false);
-  });
   return (
     <div className="landing">
       <div className="landing-title">
         <div className="landing-title-text">
           <Typography variant="h1">{t("title")}</Typography>
-          <Typography variant="h3">{t("landing.subtitle")}</Typography>
+          <Typography variant="body1">{t("landing.subtitle")}</Typography>
         </div>
       </div>
       <CustomDivider copy={t("landing.divider")} />

@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { PageHeader, ServiceCard, CustomServicesNav } from "Components/";
 import { Container } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
@@ -11,9 +11,6 @@ import "./ServicesPage.scss";
 
 const ServicesPage = props => {
   const { t } = useTranslation();
-  useLayoutEffect(() => {
-    props.setNotLanding(true);
-  });
   const servicesObject = t("services.service", { returnObjects: true });
   const serviceRefs = useRef(
     Array.from({ length: Object.keys(servicesObject).length }, () => React.createRef())
