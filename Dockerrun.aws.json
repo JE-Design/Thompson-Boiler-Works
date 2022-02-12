@@ -13,10 +13,9 @@
       "name": "backend",
       "image": "liannus/tbwsite:backend",
       "essential": true,
-
-      "cpu": 1000,
-      "memory": 500,
-      "memoryReservation": 500,
+      "cpu": 1024,
+      "memory": 512,
+      "memoryReservation": 512,
       "mountPoints": [
         {
           "sourceVolume": "tbw-secrets-backend",
