@@ -6,7 +6,7 @@ import "./FooterList.scss";
 const FooterList = ({ listItems, classname }) => {
   if (listItems) {
     return (
-      <List className="footerlist" component="nav">
+      <List className="footerlist" component="ul">
         {listItems.map(listItem => (
           <ListItem className={`${classname} footerlist-item`} key={listItem.primaryText}>
             {listItem.icon && (
