@@ -6,22 +6,6 @@ on:
 name: Deploy to Amazon EB
 
 jobs:
-  dockerize-frontend:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: Dockerize Frontend
-      uses: elgohr/Publish-Docker-Github-Action@master
-      env:
-        ENV: production
-      with:
-        name: liannus/tbwsite
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        workdir: ./frontend
-        buildargs: ENV
-        tags: "frontend"
-
   dockerize-backend:
     runs-on: ubuntu-latest
     steps:
@@ -38,21 +22,8 @@ jobs:
         buildargs: ENV 
         tags: "backend"
 
-  dockerize-reverseproxy:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: Dockerize Reverse Proxy
-      uses: elgohr/Publish-Docker-Github-Action@master
-      with:
-        name: liannus/tbwsite
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        workdir: ./reverseproxy
-        tags: "reverseproxy"
-
   deploy:
-    needs: [dockerize-frontend, dockerize-backend, dockerize-reverseproxy]
+    needs: [dockerize-backend]
     runs-on: ubuntu-latest
     strategy:
       matrix:

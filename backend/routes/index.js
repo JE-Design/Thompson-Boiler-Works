@@ -9,7 +9,7 @@ var resume;
 router.post(
   "/api/email",
   [
-    check('pageOrigin').custom((value, {req}) => {
+  check('pageOrigin').custom((value, {req}) => {
 	console.log(`Attempt validate: ${value}`);
 	return ['CONTACT', 'CAREERS'].includes(value); 
     }),
