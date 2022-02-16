@@ -11,7 +11,7 @@ const sendEmail = emailParameters => {
     resumeText: emailParameters.resumeText
   };
   return axios
-    .post("/api/email", emailObject, {
+    .post(`${process.env.REACT_APP_API_URL}/api/email`, emailObject, {
       headers: {
         "Content-Type": "application/json"
       }
@@ -22,7 +22,7 @@ const sendFile = file => {
   let formData = new FormData();
   formData.append("resume", file, file.name);
   return axios
-    .post("/api/resume", formData, {
+    .post(`${process.env.REACT_APP_API_URL}/api/resume`, formData, {
       headers: {
         "Content-Type": `multipart/form-data;`
       }
@@ -30,7 +30,7 @@ const sendFile = file => {
 };
 
 const deleteFile = () => {
-  return axios.delete("/api/resume");
+  return axios.delete(`${process.env.REACT_APP_API_URL}/api/resume`);
 }
 
 export { sendEmail, sendFile, deleteFile };
