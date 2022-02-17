@@ -1,4 +1,4 @@
-import emailjs from "emailjs"
+import emailjs from "@emailjs/browser"
 
 const sendEmail = async emailParameters => {
   const { pageOrigin, name, from, subject, body, resumeFormat, resumeText } = emailParameters;
@@ -18,19 +18,19 @@ const sendEmail = async emailParameters => {
                             process.env.REACT_APP_EMAILJS_USER_ID)
 };
 
-const sendFile = file => {
-  let formData = new FormData();
-  formData.append("resume", file, file.name);
-  return axios
-    .post(`${process.env.REACT_APP_API_URL}/api/resume`, formData, {
-      headers: {
-        "Content-Type": `multipart/form-data;`
-      }
-    });
-};
+// const sendFile = file => {
+//   let formData = new FormData();
+//   formData.append("resume", file, file.name);
+//   return axios
+//     .post(`${process.env.REACT_APP_API_URL}/api/resume`, formData, {
+//       headers: {
+//         "Content-Type": `multipart/form-data;`
+//       }
+//     });
+// };
 
-const deleteFile = () => {
-  return axios.delete(`${process.env.REACT_APP_API_URL}/api/resume`);
-}
+// const deleteFile = () => {
+//   return axios.delete(`${process.env.REACT_APP_API_URL}/api/resume`);
+// }
 
-export { sendEmail, sendFile, deleteFile };
+export { sendEmail }; //sendFile, deleteFile };

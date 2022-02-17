@@ -24,13 +24,13 @@
       ],
       "portMappings": [
         {
-          "hostPort": 18554,
+          "hostPort": 5000,
           "containerPort": 5000,
           "protocol": "tcp"
         }
       ]
     }
   ],
-  "networkMode": "bridge",
+  "networkMode": "awsvpc",
   "family": ""
 }
