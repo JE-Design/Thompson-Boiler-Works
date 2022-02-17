@@ -1,0 +1,2 @@
+[functions]
+    directory = "src/Utils/netlify/functions"
