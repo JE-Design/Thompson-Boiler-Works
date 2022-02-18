@@ -11,8 +11,8 @@ import {
 import { useTranslation } from "react-i18next";
 import { string as yupstring, object as yupobject } from "yup";
 import { useForm } from "react-hook-form";
-import { sendEmail } from "Utils/netlify/functions/Requests";
-import { DropzoneAreaBase } from 'material-ui-dropzone';
+import { sendEmail } from "Utils/";
+import { DropzoneAreaBase } from "material-ui-dropzone";
 import { CustomSnackbar } from "Components";
 
 import "./CareersForm.scss";
@@ -22,8 +22,8 @@ const MAX_FILE_SIZE = 2000000;
 const CareersForm = () => {
   const { t } = useTranslation();
   const styled = "blackUnderline";
-  const [acceptedFiles, setAcceptedFiles] = useState([])
-  //form validation
+  const [acceptedFiles, setAcceptedFiles] = useState([]);
+  // form validation
   const { handleSubmit, reset, register, errors } = useForm({
     validationSchema: yupobject().shape({
       resumeFormat: yupstring(),
@@ -40,87 +40,89 @@ const CareersForm = () => {
         is: "paste",
         then: yupstring()
           .required(t("formValidation.required.resumeText"))
-          .max(1000, t("formValidation.length.resumeText")),
-      }),
-    }),
+          .max(1000, t("formValidation.length.resumeText"))
+      })
+    })
   });
   const [radioValue, setRadioValue] = useState("upload");
   const [refreshValue, setRefreshValue] = useState(0);
   const [snackbar, setSnackbar] = useState({
     severity: "error",
-    message: "",
+    message: ""
   });
   const [openSnackbar, setOpenSnackbar] = useState(false);
-  const [ apiCommunication, setApiCommunication ] = useState(false)
-  const updateRadio = (e) => {
+  const [apiCommunication, setApiCommunication] = useState(false);
+  const updateRadio = e => {
     setRadioValue(e.target.value);
   };
 
-  //called when a file is dropped
-  const onDrop = (files) => {
-    const file = files[0]
-    setAcceptedFiles([{file}])
+  // called when a file is dropped
+  const onDrop = files => {
+    const file = files[0];
+    setAcceptedFiles([{ file }]);
     setOpenSnackbar(true);
     setSnackbar({
       severity: "success",
-      message: t("careers.form.successUpload"),
+      message: t("careers.form.successUpload")
     });
   };
 
-  const onRejected = (files) => {
+  const onRejected = files => {
     const file = files[0];
-    let rejectMessage =
-    file.size > MAX_FILE_SIZE
-      ? t("careers.form.largeFile")
-      : file.type !== "application/pdf"
-      ? t("careers.form.incorrectFile")
-      : t("careers.form.invalidFile");
+    const rejectMessage =
+      // eslint-disable-next-line no-nested-ternary
+      file.size > MAX_FILE_SIZE
+        ? t("careers.form.largeFile")
+        : file.type !== "application/pdf"
+        ? t("careers.form.incorrectFile")
+        : t("careers.form.invalidFile");
     setOpenSnackbar(true);
     setSnackbar({
       severity: "error",
-      message: rejectMessage,
+      message: rejectMessage
     });
-  }
+  };
 
   const onDelete = () => {
     setAcceptedFiles([]);
-  }
+  };
 
-  //if form passes validation, send email
-  const onSubmit = (data) => {
+  // if form passes validation, send email
+  const onSubmit = data => {
     const emailParameters = {
       pageOrigin: "CAREERS",
       name: data.name,
       from: data.email,
       subject: data.subject,
       body: data.body,
-      resumeFormat: data.resumeFormat,
-      resumeText: data.resumeText,
+      ...(acceptedFiles[0] && { attachment: acceptedFiles[0] }),
+      ...(data.resumeText && { resumeText: data.resumeText })
     };
     setApiCommunication(true);
     sendEmail(emailParameters)
-      .then((response) => {
+      .then(response => {
         if (response.status === 200) {
           reset({ name: "", email: "", subject: "", body: "" });
           setRefreshValue(refreshValue + 1);
           setOpenSnackbar(true);
           setSnackbar({
             severity: "success",
-            message: t("careers.form.success"),
-          })
+            message: t("careers.form.success")
+          });
           setAcceptedFiles([]);
         }
       })
-      .catch((error) => {
+      .catch(error => {
         setOpenSnackbar(true);
         setSnackbar({
           severity: "error",
-          message: error.response.status === 400 ? t("careers.form.missingResume") : t("careers.form.fail"),
+          message:
+            error.response.status === 400 ? t("careers.form.missingResume") : t("careers.form.fail")
         });
       })
-      .finally(()=> {
+      .finally(() => {
         setApiCommunication(false);
-      })
+      });
   };
 
   return (
@@ -145,7 +147,7 @@ const CareersForm = () => {
             className={errors.email ? {} : styled}
             variant="filled"
             color="primary"
-            error={errors.email ? true : false}
+            error={!!errors.email}
             helperText={errors.email ? errors.email.message : ""}
           />
           <TextField
@@ -158,7 +160,7 @@ const CareersForm = () => {
             color="primary"
             multiline
             rows="5"
-            error={errors.body ? true : false}
+            error={!!errors.body}
             helperText={errors.body ? errors.body.message : ""}
           />
           <RadioGroup
@@ -176,11 +178,13 @@ const CareersForm = () => {
               control={<Radio disableRipple />}
               label={t("careers.form.upload")}
             />
-            {(radioValue === "upload") ? 
-                <Typography className="info-text" variant="body1">{t("careers.form.dropzoneLabel")}</Typography>
-              :
+            {radioValue === "upload" ? (
+              <Typography className="info-text" variant="body1">
+                {t("careers.form.dropzoneLabel")}
+              </Typography>
+            ) : (
               <></>
-            }
+            )}
             <FormControlLabel
               value="paste"
               name="resumeFormat"
@@ -201,7 +205,7 @@ const CareersForm = () => {
                 multiline
                 color="primary"
                 rows="5"
-                error={errors.resumeText ? true : false}
+                error={!!errors.resumeText}
                 helperText={errors.resumeText ? errors.resumeText.message : ""}
               />
             ) : (
@@ -216,8 +220,8 @@ const CareersForm = () => {
                 onDropRejected={onRejected}
                 acceptedFiles={["application/pdf"]}
                 filesLimit={1}
-                showPreviews={true}
-                useChipsForPreview={true}
+                showPreviews
+                useChipsForPreview
                 showAlerts={false}
               />
             )}
@@ -225,7 +229,7 @@ const CareersForm = () => {
         </div>
         <Button className="submit" type="submit" variant="contained" disabled={apiCommunication}>
           {!apiCommunication && t("contact.form.button")}
-          {apiCommunication && <CircularProgress/>}
+          {apiCommunication && <CircularProgress />}
         </Button>
       </form>
       <CustomSnackbar
@@ -233,7 +237,7 @@ const CareersForm = () => {
         setOpenSnackbar={setOpenSnackbar}
         severity={snackbar.severity}
         message={snackbar.message}
-      ></CustomSnackbar>
+      />
     </>
   );
 };

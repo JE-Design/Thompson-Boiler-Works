@@ -3,7 +3,7 @@ import { Button, TextField, CircularProgress } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
 import { string as yupstring, object as yupobject } from "yup";
 import { useForm } from "react-hook-form";
-import { sendEmail } from "Utils/netlify/functions/Requests";
+import { sendEmail } from "Utils/";
 import { CustomSnackbar } from "Components";
 
 import "./ContactForm.scss";
@@ -15,9 +15,9 @@ const ContactForm = () => {
     severity: "error",
     message: ""
   });
-  const [apiCommunication, setApiCommunication] = useState(false)
+  const [apiCommunication, setApiCommunication] = useState(false);
   const [openSnackbar, setOpenSnackbar] = useState(false);
-  //form validation
+  // form validation
   const { handleSubmit, reset, register, errors } = useForm({
     validationSchema: yupobject().shape({
       name: yupstring()
@@ -34,7 +34,7 @@ const ContactForm = () => {
         .max(1000, t("formValidation.length.resumeText"))
     })
   });
-  //handles email submission
+  // handles email submission
   const onSubmit = data => {
     const emailParameters = {
       pageOrigin: "CONTACT",
@@ -86,7 +86,7 @@ const ContactForm = () => {
           className={errors.name ? {} : styled}
           variant="filled"
           color="primary"
-          error={errors.name ? true : false}
+          error={!!errors.name}
           helperText={errors.name ? errors.name.message : ""}
         />
         <TextField
@@ -97,7 +97,7 @@ const ContactForm = () => {
           className={errors.email ? {} : styled}
           variant="filled"
           color="primary"
-          error={errors.email ? true : false}
+          error={!!errors.email}
           helperText={errors.email ? errors.email.message : ""}
         />
         <TextField
@@ -108,7 +108,7 @@ const ContactForm = () => {
           className={errors.subject ? {} : styled}
           variant="filled"
           color="primary"
-          error={errors.subject ? true : false}
+          error={!!errors.subject}
           helperText={errors.subject ? errors.subject.message : ""}
         />
         <TextField
@@ -121,12 +121,12 @@ const ContactForm = () => {
           className={errors.body ? {} : styled}
           variant="filled"
           color="primary"
-          error={errors.body ? true : false}
+          error={!!errors.body}
           helperText={errors.body ? errors.body.message : ""}
         />
         <Button variant="contained" type="submit" disabled={apiCommunication}>
           {!apiCommunication && t("contact.form.button")}
-          {apiCommunication && <CircularProgress/>}
+          {apiCommunication && <CircularProgress />}
         </Button>
       </form>
       <CustomSnackbar
@@ -134,7 +134,7 @@ const ContactForm = () => {
         setOpenSnackbar={setOpenSnackbar}
         severity={snackbar.severity}
         message={snackbar.message}
-      ></CustomSnackbar>
+      />
     </>
   );
 };
