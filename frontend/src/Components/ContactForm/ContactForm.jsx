@@ -56,7 +56,7 @@ const ContactForm = () => {
         }
       })
       .catch(error => {
-        if (error.response.status === 422) {
+        if (error.status === 422) {
           setOpenSnackbar(true);
           setSnackbar({
             severity: "error",

@@ -98,7 +98,7 @@
       "fail": "Email failed to send",
       "missingResume": "No resume was provided",
       "dropzoneText": "Upload your resume",
-      "dropzoneLabel": "Upload your resume as a pdf, and ensure it's less than 2 mb."
+      "dropzoneLabel": "Upload your resume as a pdf, and ensure it's less than 500 kb."
     }
   },
   "projects": {

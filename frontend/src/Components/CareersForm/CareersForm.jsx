@@ -17,7 +17,7 @@ import { CustomSnackbar } from "Components";
 
 import "./CareersForm.scss";
 
-const MAX_FILE_SIZE = 2000000;
+const MAX_FILE_SIZE = 500000;
 
 const CareersForm = () => {
   const { t } = useTranslation();
@@ -59,7 +59,7 @@ const CareersForm = () => {
   // called when a file is dropped
   const onDrop = files => {
     const file = files[0];
-    setAcceptedFiles([{ file }]);
+    setAcceptedFiles([].concat(file));
     setOpenSnackbar(true);
     setSnackbar({
       severity: "success",
@@ -113,11 +113,11 @@ const CareersForm = () => {
         }
       })
       .catch(error => {
+        console.log(error);
         setOpenSnackbar(true);
         setSnackbar({
           severity: "error",
-          message:
-            error.response.status === 400 ? t("careers.form.missingResume") : t("careers.form.fail")
+          message: t("careers.form.fail")
         });
       })
       .finally(() => {
