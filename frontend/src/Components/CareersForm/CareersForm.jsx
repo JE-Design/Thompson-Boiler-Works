@@ -11,7 +11,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { string as yupstring, object as yupobject } from "yup";
 import { useForm } from "react-hook-form";
-import { sendEmail } from "Utils/netlify/functions/Requests";
+import { sendEmail } from "Utils/Requests";
 import { DropzoneAreaBase } from 'material-ui-dropzone';
 import { CustomSnackbar } from "Components";
 
