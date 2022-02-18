@@ -11,7 +11,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { string as yupstring, object as yupobject } from "yup";
 import { useForm } from "react-hook-form";
-import { sendEmail, sendFile, deleteFile } from "Utils/netlify/functions/Requests";
+import { sendEmail } from "Utils/netlify/functions/Requests";
 import { DropzoneAreaBase } from 'material-ui-dropzone';
 import { CustomSnackbar } from "Components";
 
@@ -58,21 +58,13 @@ const CareersForm = () => {
 
   //called when a file is dropped
   const onDrop = (files) => {
-    const file = files[0].file;
-    sendFile(file)
-      .then((response) => {
-        if (response.status === 200) {
-          setAcceptedFiles([{file}])
-          setOpenSnackbar(true);
-          setSnackbar({
-            severity: "success",
-            message: t("careers.form.successUpload"),
-          });
-        }
-      })
-      .catch(()=>{
-        return;
-      })
+    const file = files[0]
+    setAcceptedFiles([{file}])
+    setOpenSnackbar(true);
+    setSnackbar({
+      severity: "success",
+      message: t("careers.form.successUpload"),
+    });
   };
 
   const onRejected = (files) => {
@@ -92,21 +84,6 @@ const CareersForm = () => {
 
   const onDelete = () => {
     setAcceptedFiles([]);
-    deleteFile()
-      .then(()=>{
-        setOpenSnackbar(true);
-        setSnackbar({
-          severity: "success",
-          message: t("careers.form.successDelete"),
-        });
-      })
-      .catch(()=>{
-        setOpenSnackbar(true);
-        setSnackbar({
-          severity: "error",
-          message: t("careers.form.failedDelete"),
-        });
-      })
   }
 
   //if form passes validation, send email
