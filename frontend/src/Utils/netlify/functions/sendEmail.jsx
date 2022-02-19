@@ -1,7 +1,16 @@
 import emailjs from "@emailjs/browser";
 
-const sendEmail = async ({emailParameters, formRef}) => {
-  const { pageOrigin, name, from, subject, body, submissionType, attachment, resumeText } = emailParameters;
+const sendEmail = async ({ emailParameters, formRef }) => {
+  const {
+    pageOrigin,
+    name,
+    from,
+    subject,
+    body,
+    submissionType,
+    attachment,
+    resumeText
+  } = emailParameters;
   const templateId =
     pageOrigin === "CONTACT"
       ? process.env.REACT_APP_EMAILJS_CONTACT_TEMPLATE_ID

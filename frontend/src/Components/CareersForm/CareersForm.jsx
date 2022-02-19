@@ -178,23 +178,7 @@ const CareersForm = () => {
                 error={!!errors.resumeText}
                 helperText={errors.resumeText ? errors.resumeText.message : ""}
               />
-            )
-            // <DropzoneAreaBase
-            //   key={refreshValue}
-            //   fileObjects={acceptedFiles}
-            //   dropzoneClass="resume-upload"
-            //   onAdd={onDrop}
-            //   onDelete={onDelete}
-            //   maxFileSize={MAX_FILE_SIZE}
-            //   showPreviewsInDropzone={false}
-            //   onDropRejected={onRejected}
-            //   acceptedFiles={["application/pdf"]}
-            //   filesLimit={1}
-            //   showPreviews
-            //   useChipsForPreview
-            //   showAlerts={false}
-            // />
-            }
+            )}
           </div>
         </div>
         <Button className="submit" type="submit" variant="contained" disabled={apiCommunication}>
