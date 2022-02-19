@@ -61,6 +61,9 @@ form {
       }
     }
     .careers-form-resume {
+      #file-attachment {
+        margin: $default-spacing 0 $default-spacing 0;
+      }
       .MuiGrid-root.MuiGrid-container {
         margin-bottom: $default-spacing / 2;
       }

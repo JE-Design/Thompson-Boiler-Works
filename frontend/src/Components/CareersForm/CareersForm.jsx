@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {
   Button,
   TextField,
@@ -12,17 +12,17 @@ import { useTranslation } from "react-i18next";
 import { string as yupstring, object as yupobject } from "yup";
 import { useForm } from "react-hook-form";
 import { sendEmail } from "Utils/";
-import { DropzoneAreaBase } from "material-ui-dropzone";
 import { CustomSnackbar } from "Components";
 
 import "./CareersForm.scss";
 
+// eslint-disable-next-line no-unused-vars
 const MAX_FILE_SIZE = 500000;
 
 const CareersForm = () => {
   const { t } = useTranslation();
   const styled = "blackUnderline";
-  const [acceptedFiles, setAcceptedFiles] = useState([]);
+  const formRef = useRef();
   // form validation
   const { handleSubmit, reset, register, errors } = useForm({
     validationSchema: yupobject().shape({
@@ -56,50 +56,20 @@ const CareersForm = () => {
     setRadioValue(e.target.value);
   };
 
-  // called when a file is dropped
-  const onDrop = files => {
-    const file = files[0];
-    setAcceptedFiles([].concat(file));
-    setOpenSnackbar(true);
-    setSnackbar({
-      severity: "success",
-      message: t("careers.form.successUpload")
-    });
-  };
-
-  const onRejected = files => {
-    const file = files[0];
-    const rejectMessage =
-      // eslint-disable-next-line no-nested-ternary
-      file.size > MAX_FILE_SIZE
-        ? t("careers.form.largeFile")
-        : file.type !== "application/pdf"
-        ? t("careers.form.incorrectFile")
-        : t("careers.form.invalidFile");
-    setOpenSnackbar(true);
-    setSnackbar({
-      severity: "error",
-      message: rejectMessage
-    });
-  };
-
-  const onDelete = () => {
-    setAcceptedFiles([]);
-  };
-
   // if form passes validation, send email
-  const onSubmit = data => {
+  const onSubmit = async data => {
     const emailParameters = {
       pageOrigin: "CAREERS",
       name: data.name,
       from: data.email,
       subject: data.subject,
       body: data.body,
-      ...(acceptedFiles[0] && { attachment: acceptedFiles[0] }),
+      ...(radioValue && { submissionType: radioValue }),
+      ...(data.attachment[0] && { attachment: data.attachment[0] }),
       ...(data.resumeText && { resumeText: data.resumeText })
     };
     setApiCommunication(true);
-    sendEmail(emailParameters)
+    sendEmail({ emailParameters, formRef: formRef.current })
       .then(response => {
         if (response.status === 200) {
           reset({ name: "", email: "", subject: "", body: "" });
@@ -109,7 +79,6 @@ const CareersForm = () => {
             severity: "success",
             message: t("careers.form.success")
           });
-          setAcceptedFiles([]);
         }
       })
       .catch(error => {
@@ -127,7 +96,7 @@ const CareersForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form ref={formRef} onSubmit={handleSubmit(onSubmit)}>
         <div className="careers-form">
           <TextField
             id="name"
@@ -178,12 +147,13 @@ const CareersForm = () => {
               control={<Radio disableRipple />}
               label={t("careers.form.upload")}
             />
-            {radioValue === "upload" ? (
-              <Typography className="info-text" variant="body1">
-                {t("careers.form.dropzoneLabel")}
-              </Typography>
-            ) : (
-              <></>
+            {radioValue === "upload" && (
+              <div className="careers-form-resume">
+                <Typography className="info-text" variant="body1">
+                  {t("careers.form.dropzoneLabel")}
+                </Typography>
+                <input id="file-attachment" type="file" name="attachment" ref={register} />
+              </div>
             )}
             <FormControlLabel
               value="paste"
@@ -194,7 +164,7 @@ const CareersForm = () => {
             />
           </RadioGroup>
           <div className="careers-form-resume">
-            {radioValue === "paste" ? (
+            {radioValue === "paste" && (
               <TextField
                 id="resumeText"
                 label={t("careers.form.resumeText")}
@@ -208,23 +178,23 @@ const CareersForm = () => {
                 error={!!errors.resumeText}
                 helperText={errors.resumeText ? errors.resumeText.message : ""}
               />
-            ) : (
-              <DropzoneAreaBase
-                key={refreshValue}
-                fileObjects={acceptedFiles}
-                dropzoneClass="resume-upload"
-                onAdd={onDrop}
-                onDelete={onDelete}
-                maxFileSize={MAX_FILE_SIZE}
-                showPreviewsInDropzone={false}
-                onDropRejected={onRejected}
-                acceptedFiles={["application/pdf"]}
-                filesLimit={1}
-                showPreviews
-                useChipsForPreview
-                showAlerts={false}
-              />
-            )}
+            )
+            // <DropzoneAreaBase
+            //   key={refreshValue}
+            //   fileObjects={acceptedFiles}
+            //   dropzoneClass="resume-upload"
+            //   onAdd={onDrop}
+            //   onDelete={onDelete}
+            //   maxFileSize={MAX_FILE_SIZE}
+            //   showPreviewsInDropzone={false}
+            //   onDropRejected={onRejected}
+            //   acceptedFiles={["application/pdf"]}
+            //   filesLimit={1}
+            //   showPreviews
+            //   useChipsForPreview
+            //   showAlerts={false}
+            // />
+            }
           </div>
         </div>
         <Button className="submit" type="submit" variant="contained" disabled={apiCommunication}>
