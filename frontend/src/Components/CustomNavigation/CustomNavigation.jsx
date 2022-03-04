@@ -8,12 +8,12 @@ import MenuIcon from "@material-ui/icons/Menu";
 import MediaQuery from "react-responsive";
 import logo from "Assets/images/tbw-logo.webp";
 
-import "./CustomToolbar.scss";
+import "./CustomNavigation.scss";
 
-const CustomToolbar = props => {
+const CustomNavigation = () => {
   const location = useLocation();
   const { t } = useTranslation();
-  const toolbarColor = "#0b1210"
+  const toolbarColor = "#0b1210";
   const [anchorMn, setAnchorMn] = React.useState(null);
   const [currentPage, setCurrentPage] = React.useState(location.pathname.replace("/", ""));
   const title = t("title");
@@ -44,10 +44,10 @@ const CustomToolbar = props => {
       <AppBar
         className="toolbar"
         style={{
-          backgroundColor: toolbarColor,
+          backgroundColor: toolbarColor
         }}
       >
-        <Toolbar>
+        <Toolbar className="toolbar-content">
           <Link
             className="toolbar-logo"
             to={RouterPaths.LANDING}
@@ -113,4 +113,4 @@ const CustomToolbar = props => {
   );
 };
 
-export default CustomToolbar;
+export default CustomNavigation;

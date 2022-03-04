@@ -5,7 +5,7 @@ import "./ProjectCard.scss";
 const Project = ({ title, body, image, imageAlt }) => {
   return (
     <Card className="project-card">
-      <CardMedia image={image} title={imageAlt} />
+      <CardMedia image={image} title={imageAlt} height="240px" />
       <CardContent>
         <Typography gutterBottom variant="h5" component="h2">
           {title}

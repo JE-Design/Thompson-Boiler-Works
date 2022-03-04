@@ -18,14 +18,17 @@ const landingSectionServices = {
   backgroundImage: `url(${{ servicesBackground }})`
 };
 
-const LandingPage = props => {
+const LandingPage = () => {
   const { t } = useTranslation();
   return (
     <div className="landing">
-      <div className="landing-title">
-        <div className="landing-title-text">
-          <Typography variant="h1">{t("title")}</Typography>
-          <Typography variant="body1">{t("landing.subtitle")}</Typography>
+      <div style={{ width: "100%", backgroundColor: "black" }}>
+        <div className="landing-title">
+          <span className="landing-title-shadow" />
+          <div className="landing-title-text">
+            <Typography variant="h1">{t("title")}</Typography>
+            <Typography variant="body1">{t("landing.subtitle")}</Typography>
+          </div>
         </div>
       </div>
       <CustomDivider copy={t("landing.divider")} />

@@ -46,6 +46,33 @@
         "imageAlt": "Roof Top Heat Exchanger Installation",
         "imageCaption": "Roof Top Heat Exchanger Installation"
       }
+    },
+    "ourTeam": "Our Team",
+    "members": {
+      "one": {
+        "name": "Claude Turpin",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet elit ut odio vestibulum auctor in eu massa. Cras consequat, nibh ac placerat pretium, tellus nun ullamcorper nunc, ac imperdiet nunc orci id odio."
+      },
+      "two": {
+        "name": "Dave Kollesh",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet elit ut odio vestibulum auctor in eu massa. Cras consequat, nibh ac placerat pretium, tellus nun ullamcorper nunc, ac imperdiet nunc orci id odio."
+      },
+      "three": {
+        "name": "Eric Thompson",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet elit ut odio vestibulum auctor in eu massa. Cras consequat, nibh ac placerat pretium, tellus nun ullamcorper nunc, ac imperdiet nunc orci id odio."
+      },
+      "four": {
+        "name": "Jason Thompson",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet elit ut odio vestibulum auctor in eu massa. Cras consequat, nibh ac placerat pretium, tellus nun ullamcorper nunc, ac imperdiet nunc orci id odio."
+      },
+      "five": {
+        "name": "Martin Vinette",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet elit ut odio vestibulum auctor in eu massa. Cras consequat, nibh ac placerat pretium, tellus nun ullamcorper nunc, ac imperdiet nunc orci id odio."
+      },
+      "six": {
+        "name": "Maud Simoneau",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet elit ut odio vestibulum auctor in eu massa. Cras consequat, nibh ac placerat pretium, tellus nun ullamcorper nunc, ac imperdiet nunc orci id odio."
+      }
     }
   },
   "services": {

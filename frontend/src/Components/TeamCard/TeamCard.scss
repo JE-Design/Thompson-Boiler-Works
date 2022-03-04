@@ -1,0 +1,44 @@
+@import "Styles/Colours.scss";
+@import "Styles/Variables.scss";
+@import "Styles/MediaQueries.scss";
+
+.team-card {
+    width: 100%;
+    height: 560px;
+    max-width: 560px;
+    color: $color-white;
+    position: relative;
+    &-heading {
+        width: 80%;
+        padding: $default-spacing / 2;
+        word-wrap: break-word;
+        font-weight: 700 !important;
+        margin-top: auto !important;
+        &--no-margin {
+            width: 100%;
+            margin-top: 0px !important;
+        }
+    }
+    &-button {
+        height: 64px;
+        width: 64px;
+        position: absolute !important;
+        bottom: 0;
+        right: 0;
+
+    }
+    &--show-body {
+        flex-direction: column !important;
+    }
+    &-body {
+        font-size: $font-size-content !important;
+        padding: 0 $default-spacing/2;
+    }
+    @include tablet {
+        width: 560px;
+    }
+    @include desktop {
+        width: 560px;
+        max-width: unset;
+    }
+}
