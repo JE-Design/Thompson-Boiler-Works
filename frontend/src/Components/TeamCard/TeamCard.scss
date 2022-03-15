@@ -14,8 +14,10 @@
         word-wrap: break-word;
         font-weight: 700 !important;
         margin-top: auto !important;
+        @include mobile {
+            width: 90%;
+        }
         &--no-margin {
-            width: 100%;
             margin-top: 0px !important;
         }
     }

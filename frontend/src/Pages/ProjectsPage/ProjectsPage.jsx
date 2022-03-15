@@ -31,7 +31,7 @@ const ProjectsPage = props => {
                 key={key}
                 title={t(`projects.project.${key}.title`)}
                 body={t(`projects.project.${key}.body`)}
-                image={projectImages[index]}
+                images={[projectImages[index], projectImages[index]]}
                 imageAlt={t(`projects.project.${key}.imageAlt`)}
               />
             ))}
