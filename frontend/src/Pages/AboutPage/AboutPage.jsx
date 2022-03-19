@@ -54,6 +54,7 @@ const AboutPage = () => {
               Object.keys(teamMembers).map((key, index) => (
                 <TeamCard
                   name={t(`about.members.${key}.name`)}
+                  subtitle={t(`about.members.${key}.subtitle`)}
                   image={teamImages[index]}
                   body={t(`about.members.${key}.body`)}
                 />
