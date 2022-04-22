@@ -2,7 +2,7 @@ import React from "react";
 import { PageHeader, CareersForm } from "Components/";
 import { Container, Typography } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
-import headerImage from "Assets/images/careers/careers-header.jpg";
+import headerImage from "Assets/images/careers/careers-header.webp";
 import "./CareersPage.scss";
 
 const CareersPage = props => {

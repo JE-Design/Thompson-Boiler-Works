@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { PageHeader, ContactForm } from "Components/";
 import { Container } from "@material-ui/core";
 import { Skeleton } from "@material-ui/lab";
-import contactImage from "Assets/images/contact/contact-page-header.jpg";
+import contactImage from "Assets/images/contact/contact-page-header.webp";
 import "./ContactPage.scss";
 
 const ContactPage = props => {
