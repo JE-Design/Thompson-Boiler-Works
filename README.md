@@ -1,5 +1,3 @@
-![Deploy to Amazon EB](https://github.com/ForkBombGIT/TBW-Website/workflows/Deploy%20to%20Amazon%20EB/badge.svg?branch=master)
-
 # Thompson Boiler Works
 
 <img src="TBW-mockups.png" width="100%" />
