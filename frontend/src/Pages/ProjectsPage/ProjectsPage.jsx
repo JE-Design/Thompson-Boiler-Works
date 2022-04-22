@@ -2,12 +2,12 @@ import React from "react";
 import { Typography, Container } from "@material-ui/core/";
 import { useTranslation } from "react-i18next";
 import { PageHeader, ProjectCard } from "Components/";
-import projectsHeader from "Assets/images/projects/projects-header.webp";
-import projectOne from "Assets/images/projects/projects-zibi.webp";
-import projectTwo from "Assets/images/projects/projects-strathcona.webp";
-import projectThree from "Assets/images/projects/projects-kirkland.webp";
+import projectsHeader from "Assets/images/projects/projects-header.jpg";
+import projectOne from "Assets/images/projects/projects-zibi.jpg";
+import projectTwo from "Assets/images/projects/projects-strathcona.jpg";
+import projectThree from "Assets/images/projects/projects-kirkland.jpg";
 import projectFour from "Assets/images/projects/projects-hospital-steam-boiler.webp";
-import projectFive from "Assets/images/projects/projects-chiller-installation.webp";
+import projectFive from "Assets/images/projects/projects-chiller-installation.jpg";
 import "./ProjectsPage.scss";
 
 const ProjectsPage = props => {

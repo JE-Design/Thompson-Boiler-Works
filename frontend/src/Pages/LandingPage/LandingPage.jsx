@@ -4,12 +4,12 @@ import { Typography, Container, Button } from "@material-ui/core/";
 import { Link } from "react-router-dom";
 import routerPaths from "Utils/RouterPaths";
 import { useTranslation } from "react-i18next";
-import services from "Assets/images/landing/landing-services.webp";
-import projectOne from "Assets/images/landing/landing-projects-1.webp";
-import projectTwo from "Assets/images/landing/landing-projects-2.webp";
-import projectThree from "Assets/images/landing/landing-projects-3.webp";
-import projectFour from "Assets/images/landing/landing-projects-4.webp";
-import servicesBackground from "Assets/images/landing/divider.webp";
+import services from "Assets/images/landing/landing-services.jpg";
+import projectOne from "Assets/images/landing/landing-projects-1.jpg";
+import projectTwo from "Assets/images/landing/landing-projects-2.jpg";
+import projectThree from "Assets/images/landing/landing-projects-3.jpg";
+import projectFour from "Assets/images/landing/landing-projects-4.jpg";
+import servicesBackground from "Assets/images/landing/divider.jpg";
 import RenderInBrowser from "react-render-in-browser";
 
 import "./LandingPage.scss";
