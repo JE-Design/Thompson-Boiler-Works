@@ -2,9 +2,9 @@ import React from "react";
 import { PageHeader } from "Components/";
 import { Container, Typography } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
-import headerImage from "Assets/images/about/about-us-header.jpg";
-import aboutImageOne from "Assets/images/about/about-us-cooling-towers.jpg";
-import aboutImageTwo from "Assets/images/about/about-us-installation.jpg";
+import headerImage from "Assets/images/about/about-us-header.webp";
+import aboutImageOne from "Assets/images/about/about-us-cooling-towers.webp";
+import aboutImageTwo from "Assets/images/about/about-us-installation.webp";
 import "./AboutPage.scss";
 
 const AboutPage = props => {

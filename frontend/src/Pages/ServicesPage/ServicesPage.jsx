@@ -3,10 +3,10 @@ import { PageHeader, ServiceCard, CustomServicesNav } from "Components/";
 import { Container } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
 import servicesHeader from "Assets/images/services/services-header.webp";
-import serviceOne from "Assets/images/services/services-rental-boilers.jpg";
+import serviceOne from "Assets/images/services/services-rental-boilers.webp";
 import serviceTwo from "Assets/images/services/services-industrial-maintenance.webp";
-import serviceThree from "Assets/images/services/services-fabrication.jpg";
-import serviceFour from "Assets/images/services/services-high-pressure.jpg";
+import serviceThree from "Assets/images/services/services-fabrication.webp";
+import serviceFour from "Assets/images/services/services-high-pressure.webp";
 import "./ServicesPage.scss";
 
 const ServicesPage = props => {
