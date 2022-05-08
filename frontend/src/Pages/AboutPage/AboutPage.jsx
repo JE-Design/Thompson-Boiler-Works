@@ -5,19 +5,19 @@ import { useTranslation } from "react-i18next";
 import headerImage from "Assets/images/about/about-us-header.webp";
 import aboutImageOne from "Assets/images/about/about-us-cooling-towers.webp";
 import aboutImageTwo from "Assets/images/about/about-us-installation.webp";
-import claude from "Assets/images/about/team/claude-turpin.jpg";
-import dave from "Assets/images/about/team/dave-kollesh.jpg";
+import claude from "Assets/images/about/team/claude-turpin.png";
+import dave from "Assets/images/about/team/dave-kollesh.png";
 import eric from "Assets/images/about/team/eric-thompson.png";
-import jason from "Assets/images/about/team/jason-thompson.jpg";
-import martin from "Assets/images/about/team/martin-vinette.jpg";
-import maud from "Assets/images/about/team/maud-simoneau.jpg";
+import jason from "Assets/images/about/team/jason-thompson.png";
+import martin from "Assets/images/about/team/martin-vinette.png";
+import maud from "Assets/images/about/team/maud-simoneau.png";
 import "./AboutPage.scss";
 import TeamCard from "Components/TeamCard/TeamCard";
 
 const AboutPage = () => {
   const { t } = useTranslation();
   const sectionImages = [aboutImageOne, aboutImageTwo];
-  const teamImages = [claude, dave, eric, jason, martin, maud];
+  const teamImages = [eric, jason, martin, dave, claude, maud];
   const aboutObject = t("about.section", { returnObjects: true });
   const teamMembers = t("about.members", { returnObjects: true });
   return (

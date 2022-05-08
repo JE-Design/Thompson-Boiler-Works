@@ -50,29 +50,29 @@
     "ourTeam": "Our Team",
     "members": {
       "one": {
-        "name": "Claude Turpin",
-        "subtitle": "Certified Journeyman Plumber, Steamfitter, Pipe fitter, and Petroleum Equipment Mechanic 2 and 3.",
-        "body": "Claude joined Thompson Boiler Work in 2018 in the role of Senior Project Manager. He is responsible for identifying and developing new opportunities with clients. Processing bid tenders and submitting proposals. Coordinating team members to ensure all parties are on track with project requirements, deadlines, and schedules. Visiting job sites to ensure all project requirements are executed as identified in the drawings and specifications. Meeting with team members to identify and resolve issues. Co-ordinating internal resources and suppliers for the execution of projects. Managing customer satisfaction within the project transition period."
-      },
-      "two": {
-        "name": "Dave Kollesh",
-        "subtitle": "High Pressure welder, Pipe fitter, Boilermaker",
-        "body": "Dave has been employed with Thompson Boiler Works since 1999. In the beginning he was hired as an experience high-pressure welder, pipe fitter, boilermaker, with over 10 years proven experience in the field as a welder. Over the last 15 years Dave’s versatility and ability to adapt to ever changing environments has gradually transitioned him from a High-Pressure welder - Boilermaker to his present position as Office Manager- Material Buyer. He manages and oversees the day-to-day administration, accounting, payroll, material buying and customer service."
-      },
-      "three": {
         "name": "Eric Thompson",
         "subtitle": "",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet elit ut odio vestibulum auctor in eu massa. Cras consequat, nibh ac placerat pretium, tellus nun ullamcorper nunc, ac imperdiet nunc orci id odio."
       },
-      "four": {
+      "two": {
         "name": "Jason Thompson",
         "subtitle": "",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet elit ut odio vestibulum auctor in eu massa. Cras consequat, nibh ac placerat pretium, tellus nun ullamcorper nunc, ac imperdiet nunc orci id odio."
       },
-      "five": {
+      "three": {
         "name": "Martin Vinette",
         "subtitle": "High Pressure welder, Pipe fitter, Boilermaker",
         "body": "Martin has been employed with Thompson Boiler Works since 1997. He is responsible for developing customer relations, scheduling of the field welders/boiler makers, field production for all projects and troubleshooting as needed. His many years of experience working in the field as a High-Pressure Welder-Pipe Fitter-Boilermaker on both large and small projects has made the transition to Director of Operations seamless."
+      },
+      "four": {
+        "name": "Dave Kollesh",
+        "subtitle": "High Pressure welder, Pipe fitter, Boilermaker",
+        "body": "Dave has been employed with Thompson Boiler Works since 1999. In the beginning he was hired as an experience high-pressure welder, pipe fitter, boilermaker, with over 10 years proven experience in the field as a welder. Over the last 15 years Dave’s versatility and ability to adapt to ever changing environments has gradually transitioned him from a High-Pressure welder - Boilermaker to his present position as Office Manager- Material Buyer. He manages and oversees the day-to-day administration, accounting, payroll, material buying and customer service."
+      },
+      "five": {
+        "name": "Claude Turpin",
+        "subtitle": "Certified Journeyman Plumber, Steamfitter, Pipe fitter, and Petroleum Equipment Mechanic 2 and 3.",
+        "body": "Claude joined Thompson Boiler Work in 2018 in the role of Senior Project Manager. He is responsible for identifying and developing new opportunities with clients. Processing bid tenders and submitting proposals. Coordinating team members to ensure all parties are on track with project requirements, deadlines, and schedules. Visiting job sites to ensure all project requirements are executed as identified in the drawings and specifications. Meeting with team members to identify and resolve issues. Co-ordinating internal resources and suppliers for the execution of projects. Managing customer satisfaction within the project transition period."
       },
       "six": {
         "name": "Maud Simoneau",
