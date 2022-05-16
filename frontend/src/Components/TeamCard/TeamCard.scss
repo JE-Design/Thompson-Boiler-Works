@@ -28,7 +28,7 @@
     }
     &-subheading {
         padding: 0 $default-spacing $default-spacing / 2 $default-spacing;
-        @include dynamic-fonts(28px);
+        @include dynamic-fonts(26px);
         &--hidden {
             display: none;
         }

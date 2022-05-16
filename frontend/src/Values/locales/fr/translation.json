@@ -50,34 +50,34 @@
     "ourTeam": "Our Team",
     "members": {
       "one": {
-        "name": "Claude Turpin",
-        "subtitle": "Certified Journeyman Plumber, Steamfitter, Pipe fitter, and Petroleum Equipment Mechanic 2 and 3.",
-        "body": "Claude joined Thompson Boiler Work in 2018 in the role of Senior Project Manager. He is responsible for identifying and developing new opportunities with clients. Processing bid tenders and submitting proposals. Coordinating team members to ensure all parties are on track with project requirements, deadlines, and schedules. Visiting job sites to ensure all project requirements are executed as identified in the drawings and specifications. Meeting with team members to identify and resolve issues. Co-ordinating internal resources and suppliers for the execution of projects. Managing customer satisfaction within the project transition period."
+        "name": "Eric Thompson (Retired)",
+        "subtitle": "Founder, High Pressure welder, Gas technician, Oil Burner Mechanic, Boilermaker",
+        "body": "The founder of Thompson Boiler Works in 1988. Working in the field as a high-pressure welder, gas and oil technician and boilermaker until his retirement in 2003, when his son Jason Thompson was appointed President of the company."
       },
       "two": {
-        "name": "Dave Kollesh",
-        "subtitle": "High Pressure welder, Pipe fitter, Boilermaker",
-        "body": "Dave has been employed with Thompson Boiler Works since 1999. In the beginning he was hired as an experience high-pressure welder, pipe fitter, boilermaker, with over 10 years proven experience in the field as a welder. Over the last 15 years Dave’s versatility and ability to adapt to ever changing environments has gradually transitioned him from a High-Pressure welder - Boilermaker to his present position as Office Manager- Material Buyer. He manages and oversees the day-to-day administration, accounting, payroll, material buying and customer service."
+        "name": "Jason Thompson",
+        "subtitle": "President",
+        "body": "Joining the family business in 1989, Jason started as a labourer/apprentice and eventually graduating to a high-pressure welder, pipefitter, and boilermaker. Later appointed to President of Thompson Boiler Works Inc in 2003, Jason continues to maintain the core business of boilers and pressure vessels while encompassing other aspects of the commercial, industrial, and mechanical fields. In 2017, Jason acquired the skills and experience of Ritchies Welding Inc., followed respectively by McNolty Mechanical in 2020. Jason attributes the success of the companies to his many customers, suppliers, and his loyal employees."
       },
       "three": {
-        "name": "Eric Thompson",
-        "subtitle": "",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet elit ut odio vestibulum auctor in eu massa. Cras consequat, nibh ac placerat pretium, tellus nun ullamcorper nunc, ac imperdiet nunc orci id odio."
-      },
-      "four": {
-        "name": "Jason Thompson",
-        "subtitle": "",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet elit ut odio vestibulum auctor in eu massa. Cras consequat, nibh ac placerat pretium, tellus nun ullamcorper nunc, ac imperdiet nunc orci id odio."
-      },
-      "five": {
         "name": "Martin Vinette",
         "subtitle": "High Pressure welder, Pipe fitter, Boilermaker",
         "body": "Martin has been employed with Thompson Boiler Works since 1997. He is responsible for developing customer relations, scheduling of the field welders/boiler makers, field production for all projects and troubleshooting as needed. His many years of experience working in the field as a High-Pressure Welder-Pipe Fitter-Boilermaker on both large and small projects has made the transition to Director of Operations seamless."
       },
+      "four": {
+        "name": "Dave Kollesh",
+        "subtitle": "High Pressure welder, Pipe fitter, Boilermaker",
+        "body": "Dave has been employed with Thompson Boiler Works since 1999. Initially hired as an experience high-pressure welder, pipe fitter, boilermaker, with over 10 years proven experience in the field as a welder. Over the last 15 years Dave’s versatility and ability to adapt to changing environments has gradually transitioned him to his present position as Office Manager/Material Buyer. He manages and oversees the day-to-day administration, accounting, payroll, material buying and customer service."
+      },
+      "five": {
+        "name": "Claude Turpin",
+        "subtitle": "Certified Journeyman Plumber, Steamfitter, Pipe fitter, and Petroleum Equipment Mechanic 2 and 3.",
+        "body": "Claude joined Thompson Boiler Work in 2018 in the role of Senior Project Manager. He is responsible for identifying and developing new opportunities with clients, processing bid tenders and submitting proposals, coordinating team members to ensure all parties are on track with project requirements, deadlines, and schedules. He also visits job sites to ensure all project requirements are executed as identified in the drawings and specifications, meets with team members to identify and resolve issues, and co-ordinates with internal resources and suppliers for the execution of projects."
+      },
       "six": {
         "name": "Maud Simoneau",
         "subtitle": "",
-        "body": "Maud joined Thompson Boiler Works in 2018 in the role of Project Manager. Maud has been in the boiler business for many years she brings to our team a wide range of knowledge and experience in this field. She is presently responsible for the planning, troubleshooting, and executing the detail scope of work required for each project. She meets with the project team members to identify and resolve issues. Facilitating change requests to ensure that all parties are advised of the impacts on schedule and budget. Coordinating all training and other documents as require by the client. Managing customer satisfaction within the project during the transition period and conducting post -project evaluation to ensure the success of each project."
+        "body": "Maud joined Thompson Boiler Works in 2018 in the role of Project Manager. Maud has been in the boiler business for many years she brings a wide range of knowledge and experience in this field. She is presently responsible for the planning, troubleshooting, and executing the detail scope of work required for each project. She meets with the project team members to identify and resolve issues. She facilitates change requests to ensure that all parties are advised of the impacts on schedule and budget. Lastly, she manages customer satisfaction within the project during the transition period and conducting post-project evaluation to ensure the success of each project."
       }
     }
   },
