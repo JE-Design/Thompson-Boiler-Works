@@ -6,7 +6,8 @@ const ProjectCard = ({ title, body, images, imageAlt }) => {
   return (
     <Card className="project-card">
       <div className="project-card__images">
-        {images.map((image) => <CardMedia image={image} title={imageAlt} height="240px" />)}
+        {(Array.isArray(images)) && (images.map((image) => <CardMedia image={image} title={imageAlt} height="240px" />))}
+        {((!Array.isArray(images)) && <CardMedia className="project-card__images--single" image={images} title={imageAlt} height="240px" />)}
       </div>
       <CardContent>
         <Typography gutterBottom variant="h5" component="h2">

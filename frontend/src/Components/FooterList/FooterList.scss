@@ -24,6 +24,10 @@
     }
 
     .primary-text-link {
+      height: 48px;
+      width: 48px;
+      display: flex;
+      align-items: center;
       text-decoration-color: $color-dm-link;
       &:visited {
         text-decoration-color: $color-dm-link-visited;

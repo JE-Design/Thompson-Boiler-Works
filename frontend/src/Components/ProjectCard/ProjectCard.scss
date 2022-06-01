@@ -34,6 +34,9 @@
     .MuiCardMedia-root {
       min-width: 325px;
     }
+    &--single {
+      width: 100%;
+    }
   }
   @include tablet {
     width: 40%;

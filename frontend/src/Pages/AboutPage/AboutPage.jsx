@@ -5,12 +5,12 @@ import { useTranslation } from "react-i18next";
 import headerImage from "Assets/images/about/about-us-header.webp";
 import aboutImageOne from "Assets/images/about/about-us-cooling-towers.webp";
 import aboutImageTwo from "Assets/images/about/about-us-installation.webp";
-import claude from "Assets/images/about/team/claude-turpin.png";
-import dave from "Assets/images/about/team/dave-kollesh.png";
-import eric from "Assets/images/about/team/eric-thompson.png";
-import jason from "Assets/images/about/team/jason-thompson.png";
-import martin from "Assets/images/about/team/martin-vinette.png";
-import maud from "Assets/images/about/team/maud-simoneau.png";
+import claude from "Assets/images/about/team/claude-turpin.webp";
+import dave from "Assets/images/about/team/dave-kollesh.webp";
+import eric from "Assets/images/about/team/eric-thompson.webp";
+import jason from "Assets/images/about/team/jason-thompson.webp";
+import martin from "Assets/images/about/team/martin-vinette.webp";
+import maud from "Assets/images/about/team/maud-simoneau.webp";
 import "./AboutPage.scss";
 import TeamCard from "Components/TeamCard/TeamCard";
 
