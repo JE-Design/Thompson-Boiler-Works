@@ -15,7 +15,10 @@ import zibiOne from "Assets/images/projects/zibi/zibi-1.webp"
 import zibiTwo from "Assets/images/projects/zibi/zibi-2.webp"
 import zibiThree from "Assets/images/projects/zibi/zibi-3.webp"
 import zibiFour from "Assets/images/projects/zibi/zibi-4.webp"
-import projectFour from "Assets/images/projects/projects-hospital-steam-boiler.webp";
+import gorewayOne from "Assets/images/projects/goreway/goreway-1.webp"
+import gorewayTwo from "Assets/images/projects/goreway/goreway-2.webp"
+import gorewayThree from "Assets/images/projects/goreway/goreway-3.webp"
+import gorewayFour from "Assets/images/projects/goreway/goreway-4.webp"
 import projectFive from "Assets/images/projects/projects-chiller-installation.webp";
 import "./ProjectsPage.scss";
 
@@ -26,7 +29,8 @@ const ProjectsPage = props => {
   const projectImages = [[zibiOne,zibiTwo,zibiThree,zibiFour], 
                          [strathconaOne,strathconaTwo,strathconaThree,strathconaFour], 
                          [kirklandOne,kirklandTwo,kirklandThree,kirklandFour], 
-                         projectFour, projectFive];
+                         [gorewayOne,gorewayTwo,gorewayThree,gorewayFour], 
+                         projectFive];
   return (
     <>
       <PageHeader imagePath={projectsHeader} pageTitle="Projects" backgroundPosition="center" />
