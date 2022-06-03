@@ -4,7 +4,6 @@
 
 .services-nav {
   min-width: 100px;
-  max-width: 250px;
   text-align: center;
   position: sticky;
   padding: $default-spacing;
@@ -17,6 +16,7 @@
 
   @include desktop {
     overflow-x: hidden;
+    max-width: 250px;
   }
   
   /* width */

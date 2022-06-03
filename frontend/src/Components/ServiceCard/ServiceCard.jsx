@@ -15,7 +15,9 @@ const ServiceCard = props => {
         </div>
         <figure className="service-image">
           <img src={image} alt={imageAlt} />
-          <figcaption><i>{imageCaption}</i></figcaption>
+          <figcaption>
+            <i>{imageCaption}</i>
+          </figcaption>
         </figure>
       </Container>
     </div>
