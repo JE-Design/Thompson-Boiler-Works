@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { CustomToolbar, CustomFooter } from "Components/";
+import { CustomNavigation, CustomFooter } from "Components/";
 import { RouterPaths, ScrollToTop } from "Utils";
 import {
   ContactPage,
@@ -17,7 +17,7 @@ const App = () => {
     <Router>
       <ScrollToTop />
       <div className="App">
-        <CustomToolbar />
+        <CustomNavigation />
         <Switch>
           <Route path={RouterPaths.ABOUT}>
             <AboutPage />

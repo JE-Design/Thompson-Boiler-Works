@@ -4,6 +4,7 @@
 .footer {
   background-color: $color-primary;
   padding: $default-spacing $default-spacing * 2;
+  margin-top: auto;
 
   .footer-container {
     display: flex;

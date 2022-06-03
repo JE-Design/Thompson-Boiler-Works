@@ -2,10 +2,26 @@ import React from "react";
 import { Card, CardMedia, CardContent, Typography } from "@material-ui/core";
 import "./ProjectCard.scss";
 
-const Project = ({ title, body, image, imageAlt }) => {
+const ProjectCard = ({ title, body, images, imageAlt }) => {
   return (
     <Card className="project-card">
-      <CardMedia image={image} title={imageAlt} />
+      <div className="project-card__images">
+        {Array.isArray(images) &&
+          images.map((image, index) => {
+            const keys = Object.keys(imageAlt);
+            return (
+              <CardMedia key={image} image={image} title={imageAlt[keys[index]]} height="240px" />
+            );
+          })}
+        {!Array.isArray(images) && (
+          <CardMedia
+            className="project-card__images--single"
+            image={images}
+            title={imageAlt.one}
+            height="240px"
+          />
+        )}
+      </div>
       <CardContent>
         <Typography gutterBottom variant="h5" component="h2">
           {title}
@@ -18,4 +34,4 @@ const Project = ({ title, body, image, imageAlt }) => {
   );
 };
 
-export default Project;
+export default ProjectCard;

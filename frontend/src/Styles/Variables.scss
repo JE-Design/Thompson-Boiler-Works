@@ -15,11 +15,11 @@ $font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
 $font-family-condensed: "Roboto condensed", "Helvetica", "Arial", "sans-serif";
 
 @mixin dynamic-fonts($baseSize) {
-  font-size: $baseSize * 0.7;
+  font-size: $baseSize * 0.75 !important;
   @include tablet {
-    font-size: $baseSize * 0.8;
+    font-size: $baseSize * 0.8 !important;
   }
   @include desktop {
-    font-size: $baseSize;
+    font-size: $baseSize !important;
   }
 }
