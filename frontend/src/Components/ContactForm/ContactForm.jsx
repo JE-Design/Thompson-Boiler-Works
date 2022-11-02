@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Button, TextField, CircularProgress } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
 import { string as yupstring, object as yupobject } from "yup";
@@ -17,6 +17,7 @@ const ContactForm = () => {
   });
   const [apiCommunication, setApiCommunication] = useState(false);
   const [openSnackbar, setOpenSnackbar] = useState(false);
+  const formRef = useRef();
   // form validation
   const { handleSubmit, reset, register, errors } = useForm({
     validationSchema: yupobject().shape({
@@ -44,7 +45,7 @@ const ContactForm = () => {
       body: data.body
     };
     setApiCommunication(true);
-    sendEmail(emailParameters)
+    sendEmail({ emailParameters, formRef })
       .then(response => {
         if (response.status === 200) {
           reset({ name: "", email: "", subject: "", body: "" });
@@ -76,7 +77,7 @@ const ContactForm = () => {
   };
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
+      <form ref={formRef} onSubmit={handleSubmit(onSubmit)} className="contact-form">
         <p className="contact-form-title">{t("contact.form.tagline")}</p>
         <TextField
           id="name"
